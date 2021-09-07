@@ -7,10 +7,17 @@
 
 import Foundation
 
-protocol MainViewModelOutputProtocol: class {}
+protocol MainViewModelOutputProtocol: class {
+    var countArticles: Int { get }
+    func itemForTable(index: Int) -> String
+}
 
 protocol MainViewModelInputProtocol: class {}
 
 protocol MainViewModelProtocol: MainViewModelOutputProtocol, MainViewModelInputProtocol {}
 
 protocol MainRouterProtocol: class {}
+
+protocol MainViewModelDelegate: class {
+    func didFetchData()
+}
