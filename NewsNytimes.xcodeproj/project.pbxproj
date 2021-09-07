@@ -17,6 +17,9 @@
 		CE1BC98C26E684A700530874 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC98A26E684A700530874 /* MainViewController.swift */; };
 		CE1BC98D26E684A700530874 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1BC98B26E684A700530874 /* MainViewController.xib */; };
 		CE1BC99026E685BC00530874 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC98F26E685BC00530874 /* MainViewModel.swift */; };
+		CE1BC99426E6ADA000530874 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC99226E6ADA000530874 /* MainTableViewCell.swift */; };
+		CE1BC99526E6ADA000530874 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1BC99326E6ADA000530874 /* MainTableViewCell.xib */; };
+		CE1BC99D26E76DA700530874 /* Extension+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC99C26E76DA700530874 /* Extension+TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		CE1BC98A26E684A700530874 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CE1BC98B26E684A700530874 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		CE1BC98F26E685BC00530874 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CE1BC99226E6ADA000530874 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		CE1BC99326E6ADA000530874 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		CE1BC99C26E76DA700530874 /* Extension+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+TableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		CE1BC95F26E6440B00530874 /* NewsNytimes */ = {
 			isa = PBXGroup;
 			children = (
+				CE1BC99726E76CD600530874 /* Extension */,
 				CE1BC97C26E6841A00530874 /* Module */,
 				CE1BC96026E6440B00530874 /* AppDelegate.swift */,
 				CE1BC96C26E6440E00530874 /* Assets.xcassets */,
@@ -100,6 +107,8 @@
 			children = (
 				CE1BC98A26E684A700530874 /* MainViewController.swift */,
 				CE1BC98B26E684A700530874 /* MainViewController.xib */,
+				CE1BC99226E6ADA000530874 /* MainTableViewCell.swift */,
+				CE1BC99326E6ADA000530874 /* MainTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -117,6 +126,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CE1BC99726E76CD600530874 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE1BC99C26E76DA700530874 /* Extension+TableView.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +195,7 @@
 			files = (
 				CE1BC97026E6440E00530874 /* LaunchScreen.storyboard in Resources */,
 				CE1BC98D26E684A700530874 /* MainViewController.xib in Resources */,
+				CE1BC99526E6ADA000530874 /* MainTableViewCell.xib in Resources */,
 				CE1BC96D26E6440E00530874 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,7 +209,9 @@
 			files = (
 				CE1BC99026E685BC00530874 /* MainViewModel.swift in Sources */,
 				CE1BC98826E6848F00530874 /* MainRouter.swift in Sources */,
+				CE1BC99426E6ADA000530874 /* MainTableViewCell.swift in Sources */,
 				CE1BC96126E6440B00530874 /* AppDelegate.swift in Sources */,
+				CE1BC99D26E76DA700530874 /* Extension+TableView.swift in Sources */,
 				CE1BC98526E6847D00530874 /* MainWireFrame.swift in Sources */,
 				CE1BC98C26E684A700530874 /* MainViewController.swift in Sources */,
 				CE1BC96B26E6440B00530874 /* NewsNytimes.xcdatamodeld in Sources */,
