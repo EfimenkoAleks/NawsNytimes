@@ -25,7 +25,7 @@ class ViewedMicroServiceImplementation {
         guard self.state != .loading else { return }
         self.viewedList = []
         self.state = .loading
-        completionHandler(self.state)
+//        completionHandler(self.state)
         self.apiService
             .getViewedList { [weak self] (result) in
                 guard let self = self else {
