@@ -11,10 +11,19 @@ class EmailViewModel {
     private var router: EmailRouterProtocol
     weak var delegate: EmailViewModelDelegate?
     private var emails: [Emailed]
+    private var service: EmailMicroService
     
-    init(router: EmailRouterProtocol) {
+    init(
+        router: EmailRouterProtocol,
+         service: EmailMicroService = DIContainer.default.emailedMicroService
+         ) {
         self.router = router
         self.emails = []
+        self.service = service
+        if self.service.emailList.count > 0 {
+            self.emails = self.service.emailList
+            self.delegate?.didFetchData()
+        }
     }
 }
 
