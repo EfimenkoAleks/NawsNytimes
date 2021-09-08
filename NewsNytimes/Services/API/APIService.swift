@@ -10,7 +10,7 @@ import Foundation
 protocol APIService {
     
     func getEmialedList(
-        completionHandler: @escaping (Result<[MostEmailedList], Error>) -> Void
+        completionHandler: @escaping (Result<MostEmailedList, Error>) -> Void
     )
     
     func getSharedList(
@@ -18,6 +18,6 @@ protocol APIService {
     )
     
     func getViewedList(
-        completionHandler: @escaping (Result<[MostEmailedList], Error>) -> Void
+        completionHandler: @escaping (Result<MostEmailedList, Error>) -> Void
     )
 }

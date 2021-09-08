@@ -17,7 +17,7 @@ class APIServiceImplementation {
 extension APIServiceImplementation: APIService {
     
     
-    func getEmialedList(completionHandler: @escaping (Result<[MostEmailedList], Error>) -> Void) {
+    func getEmialedList(completionHandler: @escaping (Result<MostEmailedList, Error>) -> Void) {
         
         AF.request(url)
           .validate()
@@ -36,7 +36,7 @@ extension APIServiceImplementation: APIService {
           }
     }
     
-    func getViewedList(completionHandler: @escaping (Result<[MostEmailedList], Error>) -> Void) {
+    func getViewedList(completionHandler: @escaping (Result<MostEmailedList, Error>) -> Void) {
         AF.request(url)
           .validate()
           .responseDecodable(of: MostEmailedList.self) { (response) in

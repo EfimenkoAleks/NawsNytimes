@@ -48,6 +48,14 @@
 		CE7384A626E8A56F00C81FDD /* SharedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7384A526E8A56F00C81FDD /* SharedViewModel.swift */; };
 		CE7384AA26E8A95E00C81FDD /* SharedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7384A826E8A95E00C81FDD /* SharedTableViewCell.swift */; };
 		CE7384AB26E8A95E00C81FDD /* SharedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7384A926E8A95E00C81FDD /* SharedTableViewCell.xib */; };
+		CE7384B426E8C7DA00C81FDD /* ViewedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7384B326E8C7DA00C81FDD /* ViewedRouter.swift */; };
+		CE7384B726E8C7F200C81FDD /* ViewedInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7384B626E8C7F200C81FDD /* ViewedInterfaces.swift */; };
+		CE7384BA26E8C85100C81FDD /* ViewedWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7384B926E8C85100C81FDD /* ViewedWireframe.swift */; };
+		CE7384BE26E8C87000C81FDD /* ViewedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7384BC26E8C87000C81FDD /* ViewedViewController.swift */; };
+		CE7384BF26E8C87000C81FDD /* ViewedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7384BD26E8C87000C81FDD /* ViewedViewController.xib */; };
+		CE7384C426E8C8A500C81FDD /* ViewedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7384C226E8C8A500C81FDD /* ViewedTableViewCell.swift */; };
+		CE7384C526E8C8A500C81FDD /* ViewedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7384C326E8C8A500C81FDD /* ViewedTableViewCell.xib */; };
+		CE7384C826E8C8C300C81FDD /* ViewedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7384C726E8C8C300C81FDD /* ViewedViewModel.swift */; };
 		CEA59C8126E7DE8F00377780 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8026E7DE8F00377780 /* DIContainer.swift */; };
 		CEA59C8526E7E06200377780 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8426E7E06200377780 /* APIService.swift */; };
 		CEA59C8826E7E1D100377780 /* APIServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8726E7E1D100377780 /* APIServiceImplementation.swift */; };
@@ -101,6 +109,14 @@
 		CE7384A526E8A56F00C81FDD /* SharedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViewModel.swift; sourceTree = "<group>"; };
 		CE7384A826E8A95E00C81FDD /* SharedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTableViewCell.swift; sourceTree = "<group>"; };
 		CE7384A926E8A95E00C81FDD /* SharedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SharedTableViewCell.xib; sourceTree = "<group>"; };
+		CE7384B326E8C7DA00C81FDD /* ViewedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedRouter.swift; sourceTree = "<group>"; };
+		CE7384B626E8C7F200C81FDD /* ViewedInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedInterfaces.swift; sourceTree = "<group>"; };
+		CE7384B926E8C85100C81FDD /* ViewedWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedWireframe.swift; sourceTree = "<group>"; };
+		CE7384BC26E8C87000C81FDD /* ViewedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedViewController.swift; sourceTree = "<group>"; };
+		CE7384BD26E8C87000C81FDD /* ViewedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewedViewController.xib; sourceTree = "<group>"; };
+		CE7384C226E8C8A500C81FDD /* ViewedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedTableViewCell.swift; sourceTree = "<group>"; };
+		CE7384C326E8C8A500C81FDD /* ViewedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewedTableViewCell.xib; sourceTree = "<group>"; };
+		CE7384C726E8C8C300C81FDD /* ViewedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedViewModel.swift; sourceTree = "<group>"; };
 		CEA59C8026E7DE8F00377780 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		CEA59C8426E7E06200377780 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		CEA59C8726E7E1D100377780 /* APIServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceImplementation.swift; sourceTree = "<group>"; };
@@ -187,6 +203,7 @@
 		CE1BC97C26E6841A00530874 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				CE7384B026E8C79D00C81FDD /* Viewed */,
 				CE73849426E8A4C600C81FDD /* Shared */,
 				CE73847826E89AA000C81FDD /* Email */,
 				CE73846326E806DE00C81FDD /* Splach */,
@@ -367,6 +384,37 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		CE7384B026E8C79D00C81FDD /* Viewed */ = {
+			isa = PBXGroup;
+			children = (
+				CE7384B226E8C7BB00C81FDD /* ViewModel */,
+				CE7384B126E8C7AF00C81FDD /* View */,
+				CE7384B326E8C7DA00C81FDD /* ViewedRouter.swift */,
+				CE7384B626E8C7F200C81FDD /* ViewedInterfaces.swift */,
+				CE7384B926E8C85100C81FDD /* ViewedWireframe.swift */,
+			);
+			path = Viewed;
+			sourceTree = "<group>";
+		};
+		CE7384B126E8C7AF00C81FDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE7384BC26E8C87000C81FDD /* ViewedViewController.swift */,
+				CE7384BD26E8C87000C81FDD /* ViewedViewController.xib */,
+				CE7384C226E8C8A500C81FDD /* ViewedTableViewCell.swift */,
+				CE7384C326E8C8A500C81FDD /* ViewedTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE7384B226E8C7BB00C81FDD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE7384C726E8C8C300C81FDD /* ViewedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		CEA59C8326E7E04D00377780 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,8 +501,10 @@
 			files = (
 				CE1BC97026E6440E00530874 /* LaunchScreen.storyboard in Resources */,
 				CE73849126E89E8F00C81FDD /* EmailTableViewCell.xib in Resources */,
+				CE7384BF26E8C87000C81FDD /* ViewedViewController.xib in Resources */,
 				CE1BC98D26E684A700530874 /* MainViewController.xib in Resources */,
 				CE1BC99526E6ADA000530874 /* MainTableViewCell.xib in Resources */,
+				CE7384C526E8C8A500C81FDD /* ViewedTableViewCell.xib in Resources */,
 				CE73848926E89BD900C81FDD /* EmailViewController.xib in Resources */,
 				CE7384AB26E8A95E00C81FDD /* SharedTableViewCell.xib in Resources */,
 				CE73847226E807EC00C81FDD /* SplashViewController.xib in Resources */,
@@ -512,12 +562,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7384BE26E8C87000C81FDD /* ViewedViewController.swift in Sources */,
 				CE73849E26E8A53900C81FDD /* SharedWireFrame.swift in Sources */,
+				CE7384B426E8C7DA00C81FDD /* ViewedRouter.swift in Sources */,
 				CE1BC9A926E7893600530874 /* ArticleListRequest.swift in Sources */,
 				CE73849826E8A4FF00C81FDD /* SharedInterfaces.swift in Sources */,
 				CE1BC99026E685BC00530874 /* MainViewModel.swift in Sources */,
 				CE7384A626E8A56F00C81FDD /* SharedViewModel.swift in Sources */,
 				CE73848C26E89C0800C81FDD /* EmailViewModel.swift in Sources */,
+				CE7384B726E8C7F200C81FDD /* ViewedInterfaces.swift in Sources */,
 				CE73845C26E7F2EB00C81FDD /* ViewedMicroService.swift in Sources */,
 				CE73849B26E8A52500C81FDD /* SharedRouter.swift in Sources */,
 				CE73847C26E89ACB00C81FDD /* EmailRouter.swift in Sources */,
@@ -526,10 +579,12 @@
 				CE73847126E807EC00C81FDD /* SplashViewController.swift in Sources */,
 				CE73846726E8071000C81FDD /* SplashRouter.swift in Sources */,
 				CE1BC9AC26E7C38200530874 /* MostEmailedList.swift in Sources */,
+				CE7384C426E8C8A500C81FDD /* ViewedTableViewCell.swift in Sources */,
 				CE7384AA26E8A95E00C81FDD /* SharedTableViewCell.swift in Sources */,
 				CE73848326E89B2F00C81FDD /* EmailWireFrame.swift in Sources */,
 				CEA59C8C26E7EB1400377780 /* EmailMicroService.swift in Sources */,
 				CE73849026E89E8F00C81FDD /* EmailTableViewCell.swift in Sources */,
+				CE7384C826E8C8C300C81FDD /* ViewedViewModel.swift in Sources */,
 				CE1BC96126E6440B00530874 /* AppDelegate.swift in Sources */,
 				CE7384A226E8A55600C81FDD /* SharedViewController.swift in Sources */,
 				CEA59C8126E7DE8F00377780 /* DIContainer.swift in Sources */,
@@ -546,6 +601,7 @@
 				CE1BC98C26E684A700530874 /* MainViewController.swift in Sources */,
 				CE1BC96B26E6440B00530874 /* NewsNytimes.xcdatamodeld in Sources */,
 				CE1BC98126E6846500530874 /* MainIntemfaces.swift in Sources */,
+				CE7384BA26E8C85100C81FDD /* ViewedWireframe.swift in Sources */,
 				CEA59C8F26E7F06400377780 /* SharedMicroService.swift in Sources */,
 				CE73846D26E8074D00C81FDD /* SplashWireFrame.swift in Sources */,
 			);
