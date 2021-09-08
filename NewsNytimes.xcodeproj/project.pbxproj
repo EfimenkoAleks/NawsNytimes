@@ -32,6 +32,14 @@
 		CE73847126E807EC00C81FDD /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73846F26E807EC00C81FDD /* SplashViewController.swift */; };
 		CE73847226E807EC00C81FDD /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE73847026E807EC00C81FDD /* SplashViewController.xib */; };
 		CE73847526E8088C00C81FDD /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73847426E8088C00C81FDD /* SplashViewModel.swift */; };
+		CE73847C26E89ACB00C81FDD /* EmailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73847B26E89ACB00C81FDD /* EmailRouter.swift */; };
+		CE73848026E89B0D00C81FDD /* EmailInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73847F26E89B0D00C81FDD /* EmailInterfaces.swift */; };
+		CE73848326E89B2F00C81FDD /* EmailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73848226E89B2F00C81FDD /* EmailWireFrame.swift */; };
+		CE73848826E89BD900C81FDD /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73848626E89BD900C81FDD /* EmailViewController.swift */; };
+		CE73848926E89BD900C81FDD /* EmailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE73848726E89BD900C81FDD /* EmailViewController.xib */; };
+		CE73848C26E89C0800C81FDD /* EmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73848B26E89C0800C81FDD /* EmailViewModel.swift */; };
+		CE73849026E89E8F00C81FDD /* EmailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73848E26E89E8F00C81FDD /* EmailTableViewCell.swift */; };
+		CE73849126E89E8F00C81FDD /* EmailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE73848F26E89E8F00C81FDD /* EmailTableViewCell.xib */; };
 		CEA59C8126E7DE8F00377780 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8026E7DE8F00377780 /* DIContainer.swift */; };
 		CEA59C8526E7E06200377780 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8426E7E06200377780 /* APIService.swift */; };
 		CEA59C8826E7E1D100377780 /* APIServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8726E7E1D100377780 /* APIServiceImplementation.swift */; };
@@ -69,6 +77,14 @@
 		CE73846F26E807EC00C81FDD /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		CE73847026E807EC00C81FDD /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		CE73847426E8088C00C81FDD /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		CE73847B26E89ACB00C81FDD /* EmailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRouter.swift; sourceTree = "<group>"; };
+		CE73847F26E89B0D00C81FDD /* EmailInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailInterfaces.swift; sourceTree = "<group>"; };
+		CE73848226E89B2F00C81FDD /* EmailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailWireFrame.swift; sourceTree = "<group>"; };
+		CE73848626E89BD900C81FDD /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		CE73848726E89BD900C81FDD /* EmailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailViewController.xib; sourceTree = "<group>"; };
+		CE73848B26E89C0800C81FDD /* EmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewModel.swift; sourceTree = "<group>"; };
+		CE73848E26E89E8F00C81FDD /* EmailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTableViewCell.swift; sourceTree = "<group>"; };
+		CE73848F26E89E8F00C81FDD /* EmailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailTableViewCell.xib; sourceTree = "<group>"; };
 		CEA59C8026E7DE8F00377780 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		CEA59C8426E7E06200377780 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		CEA59C8726E7E1D100377780 /* APIServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceImplementation.swift; sourceTree = "<group>"; };
@@ -155,6 +171,7 @@
 		CE1BC97C26E6841A00530874 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				CE73847826E89AA000C81FDD /* Email */,
 				CE73846326E806DE00C81FDD /* Splach */,
 				CE1BC97B26E683FF00530874 /* Main */,
 			);
@@ -271,6 +288,37 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		CE73847826E89AA000C81FDD /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				CE73847A26E89AB100C81FDD /* ViewModel */,
+				CE73847926E89AAA00C81FDD /* View */,
+				CE73847B26E89ACB00C81FDD /* EmailRouter.swift */,
+				CE73847F26E89B0D00C81FDD /* EmailInterfaces.swift */,
+				CE73848226E89B2F00C81FDD /* EmailWireFrame.swift */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
+		CE73847926E89AAA00C81FDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE73848626E89BD900C81FDD /* EmailViewController.swift */,
+				CE73848726E89BD900C81FDD /* EmailViewController.xib */,
+				CE73848E26E89E8F00C81FDD /* EmailTableViewCell.swift */,
+				CE73848F26E89E8F00C81FDD /* EmailTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE73847A26E89AB100C81FDD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE73848B26E89C0800C81FDD /* EmailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		CEA59C8326E7E04D00377780 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,8 +404,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1BC97026E6440E00530874 /* LaunchScreen.storyboard in Resources */,
+				CE73849126E89E8F00C81FDD /* EmailTableViewCell.xib in Resources */,
 				CE1BC98D26E684A700530874 /* MainViewController.xib in Resources */,
 				CE1BC99526E6ADA000530874 /* MainTableViewCell.xib in Resources */,
+				CE73848926E89BD900C81FDD /* EmailViewController.xib in Resources */,
 				CE73847226E807EC00C81FDD /* SplashViewController.xib in Resources */,
 				CE1BC96D26E6440E00530874 /* Assets.xcassets in Resources */,
 			);
@@ -414,20 +464,26 @@
 			files = (
 				CE1BC9A926E7893600530874 /* ArticleListRequest.swift in Sources */,
 				CE1BC99026E685BC00530874 /* MainViewModel.swift in Sources */,
+				CE73848C26E89C0800C81FDD /* EmailViewModel.swift in Sources */,
 				CE73845C26E7F2EB00C81FDD /* ViewedMicroService.swift in Sources */,
+				CE73847C26E89ACB00C81FDD /* EmailRouter.swift in Sources */,
 				CE1BC98826E6848F00530874 /* MainRouter.swift in Sources */,
 				CE1BC99426E6ADA000530874 /* MainTableViewCell.swift in Sources */,
 				CE73847126E807EC00C81FDD /* SplashViewController.swift in Sources */,
 				CE73846726E8071000C81FDD /* SplashRouter.swift in Sources */,
 				CE1BC9AC26E7C38200530874 /* MostEmailedList.swift in Sources */,
+				CE73848326E89B2F00C81FDD /* EmailWireFrame.swift in Sources */,
 				CEA59C8C26E7EB1400377780 /* EmailMicroService.swift in Sources */,
+				CE73849026E89E8F00C81FDD /* EmailTableViewCell.swift in Sources */,
 				CE1BC96126E6440B00530874 /* AppDelegate.swift in Sources */,
 				CEA59C8126E7DE8F00377780 /* DIContainer.swift in Sources */,
 				CE1BC99D26E76DA700530874 /* Extension+TableView.swift in Sources */,
 				CE73846A26E8073200C81FDD /* SplashInterfaces.swift in Sources */,
 				CE73846026E7F54E00C81FDD /* ConfigurationService.swift in Sources */,
 				CEA59C8526E7E06200377780 /* APIService.swift in Sources */,
+				CE73848026E89B0D00C81FDD /* EmailInterfaces.swift in Sources */,
 				CE73847526E8088C00C81FDD /* SplashViewModel.swift in Sources */,
+				CE73848826E89BD900C81FDD /* EmailViewController.swift in Sources */,
 				CE1BC9A326E7847D00530874 /* Services.swift in Sources */,
 				CEA59C8826E7E1D100377780 /* APIServiceImplementation.swift in Sources */,
 				CE1BC98526E6847D00530874 /* MainWireFrame.swift in Sources */,
