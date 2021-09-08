@@ -27,7 +27,7 @@ extension APIServiceImplementation: APIService {
           }
     }
     
-    func getSharedList(completionHandler: @escaping (Result<[MostEmailedList], Error>) -> Void) {
+    func getSharedList(completionHandler: @escaping (Result<MostEmailedList, Error>) -> Void) {
         AF.request(url)
           .validate()
           .responseDecodable(of: MostEmailedList.self) { (response) in

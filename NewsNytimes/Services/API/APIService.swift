@@ -14,7 +14,7 @@ protocol APIService {
     )
     
     func getSharedList(
-        completionHandler: @escaping (Result<[MostEmailedList], Error>) -> Void
+        completionHandler: @escaping (Result<MostEmailedList, Error>) -> Void
     )
     
     func getViewedList(
