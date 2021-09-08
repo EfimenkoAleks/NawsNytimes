@@ -25,7 +25,7 @@ class SharedMicroServiceImplementation {
         guard self.state != .loading else { return }
         self.sharedList = []
         self.state = .loading
-        completionHandler(self.state)
+//        completionHandler(self.state)
         self.apiService
             .getSharedList { [weak self] (result) in
                 guard let self = self else {

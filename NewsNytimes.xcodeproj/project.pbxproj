@@ -26,6 +26,12 @@
 		CE1BC9AC26E7C38200530874 /* MostEmailedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC9AB26E7C38200530874 /* MostEmailedList.swift */; };
 		CE73845C26E7F2EB00C81FDD /* ViewedMicroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73845B26E7F2EB00C81FDD /* ViewedMicroService.swift */; };
 		CE73846026E7F54E00C81FDD /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73845F26E7F54E00C81FDD /* ConfigurationService.swift */; };
+		CE73846726E8071000C81FDD /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73846626E8071000C81FDD /* SplashRouter.swift */; };
+		CE73846A26E8073200C81FDD /* SplashInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73846926E8073200C81FDD /* SplashInterfaces.swift */; };
+		CE73846D26E8074D00C81FDD /* SplashWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73846C26E8074D00C81FDD /* SplashWireFrame.swift */; };
+		CE73847126E807EC00C81FDD /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73846F26E807EC00C81FDD /* SplashViewController.swift */; };
+		CE73847226E807EC00C81FDD /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE73847026E807EC00C81FDD /* SplashViewController.xib */; };
+		CE73847526E8088C00C81FDD /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73847426E8088C00C81FDD /* SplashViewModel.swift */; };
 		CEA59C8126E7DE8F00377780 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8026E7DE8F00377780 /* DIContainer.swift */; };
 		CEA59C8526E7E06200377780 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8426E7E06200377780 /* APIService.swift */; };
 		CEA59C8826E7E1D100377780 /* APIServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8726E7E1D100377780 /* APIServiceImplementation.swift */; };
@@ -57,6 +63,12 @@
 		CE1BC9AB26E7C38200530874 /* MostEmailedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostEmailedList.swift; sourceTree = "<group>"; };
 		CE73845B26E7F2EB00C81FDD /* ViewedMicroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedMicroService.swift; sourceTree = "<group>"; };
 		CE73845F26E7F54E00C81FDD /* ConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
+		CE73846626E8071000C81FDD /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		CE73846926E8073200C81FDD /* SplashInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInterfaces.swift; sourceTree = "<group>"; };
+		CE73846C26E8074D00C81FDD /* SplashWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashWireFrame.swift; sourceTree = "<group>"; };
+		CE73846F26E807EC00C81FDD /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		CE73847026E807EC00C81FDD /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		CE73847426E8088C00C81FDD /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		CEA59C8026E7DE8F00377780 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		CEA59C8426E7E06200377780 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		CEA59C8726E7E1D100377780 /* APIServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceImplementation.swift; sourceTree = "<group>"; };
@@ -143,6 +155,7 @@
 		CE1BC97C26E6841A00530874 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				CE73846326E806DE00C81FDD /* Splach */,
 				CE1BC97B26E683FF00530874 /* Main */,
 			);
 			path = Module;
@@ -227,6 +240,35 @@
 				CE73845F26E7F54E00C81FDD /* ConfigurationService.swift */,
 			);
 			path = ConfigurationService;
+			sourceTree = "<group>";
+		};
+		CE73846326E806DE00C81FDD /* Splach */ = {
+			isa = PBXGroup;
+			children = (
+				CE73846526E806F300C81FDD /* ViewModel */,
+				CE73846426E806EB00C81FDD /* View */,
+				CE73846626E8071000C81FDD /* SplashRouter.swift */,
+				CE73846926E8073200C81FDD /* SplashInterfaces.swift */,
+				CE73846C26E8074D00C81FDD /* SplashWireFrame.swift */,
+			);
+			path = Splach;
+			sourceTree = "<group>";
+		};
+		CE73846426E806EB00C81FDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE73846F26E807EC00C81FDD /* SplashViewController.swift */,
+				CE73847026E807EC00C81FDD /* SplashViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE73846526E806F300C81FDD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE73847426E8088C00C81FDD /* SplashViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CEA59C8326E7E04D00377780 /* API */ = {
@@ -316,6 +358,7 @@
 				CE1BC97026E6440E00530874 /* LaunchScreen.storyboard in Resources */,
 				CE1BC98D26E684A700530874 /* MainViewController.xib in Resources */,
 				CE1BC99526E6ADA000530874 /* MainTableViewCell.xib in Resources */,
+				CE73847226E807EC00C81FDD /* SplashViewController.xib in Resources */,
 				CE1BC96D26E6440E00530874 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,13 +417,17 @@
 				CE73845C26E7F2EB00C81FDD /* ViewedMicroService.swift in Sources */,
 				CE1BC98826E6848F00530874 /* MainRouter.swift in Sources */,
 				CE1BC99426E6ADA000530874 /* MainTableViewCell.swift in Sources */,
+				CE73847126E807EC00C81FDD /* SplashViewController.swift in Sources */,
+				CE73846726E8071000C81FDD /* SplashRouter.swift in Sources */,
 				CE1BC9AC26E7C38200530874 /* MostEmailedList.swift in Sources */,
 				CEA59C8C26E7EB1400377780 /* EmailMicroService.swift in Sources */,
 				CE1BC96126E6440B00530874 /* AppDelegate.swift in Sources */,
 				CEA59C8126E7DE8F00377780 /* DIContainer.swift in Sources */,
 				CE1BC99D26E76DA700530874 /* Extension+TableView.swift in Sources */,
+				CE73846A26E8073200C81FDD /* SplashInterfaces.swift in Sources */,
 				CE73846026E7F54E00C81FDD /* ConfigurationService.swift in Sources */,
 				CEA59C8526E7E06200377780 /* APIService.swift in Sources */,
+				CE73847526E8088C00C81FDD /* SplashViewModel.swift in Sources */,
 				CE1BC9A326E7847D00530874 /* Services.swift in Sources */,
 				CEA59C8826E7E1D100377780 /* APIServiceImplementation.swift in Sources */,
 				CE1BC98526E6847D00530874 /* MainWireFrame.swift in Sources */,
@@ -388,6 +435,7 @@
 				CE1BC96B26E6440B00530874 /* NewsNytimes.xcdatamodeld in Sources */,
 				CE1BC98126E6846500530874 /* MainIntemfaces.swift in Sources */,
 				CEA59C8F26E7F06400377780 /* SharedMicroService.swift in Sources */,
+				CE73846D26E8074D00C81FDD /* SplashWireFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
