@@ -40,6 +40,14 @@
 		CE73848C26E89C0800C81FDD /* EmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73848B26E89C0800C81FDD /* EmailViewModel.swift */; };
 		CE73849026E89E8F00C81FDD /* EmailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73848E26E89E8F00C81FDD /* EmailTableViewCell.swift */; };
 		CE73849126E89E8F00C81FDD /* EmailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE73848F26E89E8F00C81FDD /* EmailTableViewCell.xib */; };
+		CE73849826E8A4FF00C81FDD /* SharedInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73849726E8A4FF00C81FDD /* SharedInterfaces.swift */; };
+		CE73849B26E8A52500C81FDD /* SharedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73849A26E8A52500C81FDD /* SharedRouter.swift */; };
+		CE73849E26E8A53900C81FDD /* SharedWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73849D26E8A53900C81FDD /* SharedWireFrame.swift */; };
+		CE7384A226E8A55600C81FDD /* SharedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7384A026E8A55600C81FDD /* SharedViewController.swift */; };
+		CE7384A326E8A55600C81FDD /* SharedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7384A126E8A55600C81FDD /* SharedViewController.xib */; };
+		CE7384A626E8A56F00C81FDD /* SharedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7384A526E8A56F00C81FDD /* SharedViewModel.swift */; };
+		CE7384AA26E8A95E00C81FDD /* SharedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7384A826E8A95E00C81FDD /* SharedTableViewCell.swift */; };
+		CE7384AB26E8A95E00C81FDD /* SharedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7384A926E8A95E00C81FDD /* SharedTableViewCell.xib */; };
 		CEA59C8126E7DE8F00377780 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8026E7DE8F00377780 /* DIContainer.swift */; };
 		CEA59C8526E7E06200377780 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8426E7E06200377780 /* APIService.swift */; };
 		CEA59C8826E7E1D100377780 /* APIServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8726E7E1D100377780 /* APIServiceImplementation.swift */; };
@@ -85,6 +93,14 @@
 		CE73848B26E89C0800C81FDD /* EmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewModel.swift; sourceTree = "<group>"; };
 		CE73848E26E89E8F00C81FDD /* EmailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTableViewCell.swift; sourceTree = "<group>"; };
 		CE73848F26E89E8F00C81FDD /* EmailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailTableViewCell.xib; sourceTree = "<group>"; };
+		CE73849726E8A4FF00C81FDD /* SharedInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedInterfaces.swift; sourceTree = "<group>"; };
+		CE73849A26E8A52500C81FDD /* SharedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedRouter.swift; sourceTree = "<group>"; };
+		CE73849D26E8A53900C81FDD /* SharedWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedWireFrame.swift; sourceTree = "<group>"; };
+		CE7384A026E8A55600C81FDD /* SharedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViewController.swift; sourceTree = "<group>"; };
+		CE7384A126E8A55600C81FDD /* SharedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SharedViewController.xib; sourceTree = "<group>"; };
+		CE7384A526E8A56F00C81FDD /* SharedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViewModel.swift; sourceTree = "<group>"; };
+		CE7384A826E8A95E00C81FDD /* SharedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTableViewCell.swift; sourceTree = "<group>"; };
+		CE7384A926E8A95E00C81FDD /* SharedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SharedTableViewCell.xib; sourceTree = "<group>"; };
 		CEA59C8026E7DE8F00377780 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		CEA59C8426E7E06200377780 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		CEA59C8726E7E1D100377780 /* APIServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceImplementation.swift; sourceTree = "<group>"; };
@@ -171,6 +187,7 @@
 		CE1BC97C26E6841A00530874 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				CE73849426E8A4C600C81FDD /* Shared */,
 				CE73847826E89AA000C81FDD /* Email */,
 				CE73846326E806DE00C81FDD /* Splach */,
 				CE1BC97B26E683FF00530874 /* Main */,
@@ -319,6 +336,37 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		CE73849426E8A4C600C81FDD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CE73849626E8A4DF00C81FDD /* ViewModel */,
+				CE73849526E8A4D700C81FDD /* View */,
+				CE73849726E8A4FF00C81FDD /* SharedInterfaces.swift */,
+				CE73849A26E8A52500C81FDD /* SharedRouter.swift */,
+				CE73849D26E8A53900C81FDD /* SharedWireFrame.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CE73849526E8A4D700C81FDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE7384A026E8A55600C81FDD /* SharedViewController.swift */,
+				CE7384A126E8A55600C81FDD /* SharedViewController.xib */,
+				CE7384A826E8A95E00C81FDD /* SharedTableViewCell.swift */,
+				CE7384A926E8A95E00C81FDD /* SharedTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE73849626E8A4DF00C81FDD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE7384A526E8A56F00C81FDD /* SharedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		CEA59C8326E7E04D00377780 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,8 +456,10 @@
 				CE1BC98D26E684A700530874 /* MainViewController.xib in Resources */,
 				CE1BC99526E6ADA000530874 /* MainTableViewCell.xib in Resources */,
 				CE73848926E89BD900C81FDD /* EmailViewController.xib in Resources */,
+				CE7384AB26E8A95E00C81FDD /* SharedTableViewCell.xib in Resources */,
 				CE73847226E807EC00C81FDD /* SplashViewController.xib in Resources */,
 				CE1BC96D26E6440E00530874 /* Assets.xcassets in Resources */,
+				CE7384A326E8A55600C81FDD /* SharedViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,20 +512,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE73849E26E8A53900C81FDD /* SharedWireFrame.swift in Sources */,
 				CE1BC9A926E7893600530874 /* ArticleListRequest.swift in Sources */,
+				CE73849826E8A4FF00C81FDD /* SharedInterfaces.swift in Sources */,
 				CE1BC99026E685BC00530874 /* MainViewModel.swift in Sources */,
+				CE7384A626E8A56F00C81FDD /* SharedViewModel.swift in Sources */,
 				CE73848C26E89C0800C81FDD /* EmailViewModel.swift in Sources */,
 				CE73845C26E7F2EB00C81FDD /* ViewedMicroService.swift in Sources */,
+				CE73849B26E8A52500C81FDD /* SharedRouter.swift in Sources */,
 				CE73847C26E89ACB00C81FDD /* EmailRouter.swift in Sources */,
 				CE1BC98826E6848F00530874 /* MainRouter.swift in Sources */,
 				CE1BC99426E6ADA000530874 /* MainTableViewCell.swift in Sources */,
 				CE73847126E807EC00C81FDD /* SplashViewController.swift in Sources */,
 				CE73846726E8071000C81FDD /* SplashRouter.swift in Sources */,
 				CE1BC9AC26E7C38200530874 /* MostEmailedList.swift in Sources */,
+				CE7384AA26E8A95E00C81FDD /* SharedTableViewCell.swift in Sources */,
 				CE73848326E89B2F00C81FDD /* EmailWireFrame.swift in Sources */,
 				CEA59C8C26E7EB1400377780 /* EmailMicroService.swift in Sources */,
 				CE73849026E89E8F00C81FDD /* EmailTableViewCell.swift in Sources */,
 				CE1BC96126E6440B00530874 /* AppDelegate.swift in Sources */,
+				CE7384A226E8A55600C81FDD /* SharedViewController.swift in Sources */,
 				CEA59C8126E7DE8F00377780 /* DIContainer.swift in Sources */,
 				CE1BC99D26E76DA700530874 /* Extension+TableView.swift in Sources */,
 				CE73846A26E8073200C81FDD /* SplashInterfaces.swift in Sources */,

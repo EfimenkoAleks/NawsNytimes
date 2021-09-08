@@ -8,14 +8,14 @@
 import Foundation
 
 protocol SharedMicroService: Service {
-    var sharedList: [MostEmailedList] { get }
+    var sharedList: [Emailed] { get }
 }
 
 class SharedMicroServiceImplementation {
     
     private let apiService: APIService
     var state: ServiceState = .initial
-    private(set) var sharedList = [MostEmailedList]()
+    private(set) var sharedList = [Emailed]()
     
     init(apiService: APIService) {
         self.apiService = apiService
@@ -32,13 +32,13 @@ class SharedMicroServiceImplementation {
                     completionHandler(.error)
                     return
                 }
-                guard let list = try? result.get() else {
+                guard let list = try? result.get(), let rezultList = list.results else {
                     self.state = .error
                     completionHandler(self.state)
                     return
                 }
                 
-                self.sharedList = list
+                self.sharedList = rezultList
                 
                 self.state = .loaded
                 completionHandler(self.state)
