@@ -13,6 +13,7 @@ class EmailViewController: UIViewController {
         didSet {
             tableView.registerCell(type: EmailTableViewCell.self)
             tableView.backgroundColor = .clear
+            tableView.rowHeight = 60
             tableView.delegate = self
             tableView.dataSource = self
         }

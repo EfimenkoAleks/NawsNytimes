@@ -1,17 +1,17 @@
 //
-//  MostEmailedList.swift
+//  APIModel.swift
 //  NewsNytimes
 //
-//  Created by user on 07.09.2021.
+//  Created by user on 09.09.2021.
 //
 
 import Foundation
 
-public struct MostEmailedList: Codable {
-    var results: [Emailed]?
+public struct APIModel: Codable {
+    var results: [Articles]?
 }
 
-struct Emailed: Codable {
+struct Articles: Codable {
     var id: Double?
     var source: String?
     var publishedDate: String?
@@ -38,7 +38,7 @@ struct Media: Codable {
 }
 
 struct Photo: Codable {
-    var url: URL?
+    var url: String?
     var height: Int?
     var width: Int?
 }

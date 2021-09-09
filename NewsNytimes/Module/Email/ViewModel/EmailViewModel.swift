@@ -10,7 +10,7 @@ import Foundation
 class EmailViewModel {
     private var router: EmailRouterProtocol
     weak var delegate: EmailViewModelDelegate?
-    private var emails: [Emailed]
+    private var emails: [Articles]
     private var service: EmailMicroService
     
     init(
@@ -33,7 +33,7 @@ extension EmailViewModel: EmailViewModelProtocol {
         return self.emails.count
     }
     
-    func itemForTable(index: Int) -> Emailed {
+    func itemForTable(index: Int) -> Articles {
         return self.emails[index]
     }
 }

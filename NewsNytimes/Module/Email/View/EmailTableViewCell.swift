@@ -15,12 +15,13 @@ class EmailTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.backgroundColor = .clear
         let image = UIImage(systemName: "star")?.withRenderingMode(.alwaysTemplate)
         self.statImageView.image = image
-        self.statImageView.tintColor = .yellow
+        self.statImageView.tintColor = .systemGray2
     }
 
-    func configure(model: Emailed) {
+    func configure(model: Articles) {
         self.emailTextLabel.text = model.title
     }
     

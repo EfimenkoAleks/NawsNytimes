@@ -8,14 +8,14 @@
 import Foundation
 
 protocol EmailMicroService: Service {
-    var emailList: [Emailed] { get }
+    var emailList: [Articles] { get }
 }
 
 class EmailMicroServiceImplementation {
     
     private let apiService: APIService
     var state: ServiceState = .initial
-    private(set) var emailList = [Emailed]()
+    private(set) var emailList = [Articles]()
     
     init(apiService: APIService) {
         self.apiService = apiService
@@ -32,7 +32,7 @@ class EmailMicroServiceImplementation {
                     completionHandler(.error)
                     return
                 }
-                guard let list = try? result.get(), let rezultList = list.results else {
+                guard let rezultList = result.results else {
                     self.state = .error
                     completionHandler(self.state)
                     return

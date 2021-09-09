@@ -5,18 +5,24 @@
 //  Created by user on 06.09.2021.
 //
 
-import Foundation
+import UIKit
 
 protocol MainViewModelOutputProtocol: class {
-    var countArticles: Int { get }
-    func itemForTable(index: Int) -> String
+    var modules: [UIViewController] { get }
+    var titles: [String] { get }
+    var images: [UIImage] { get }
+    var delegate: MainViewModelDelegate? { get set }
 }
 
 protocol MainViewModelInputProtocol: class {}
 
 protocol MainViewModelProtocol: MainViewModelOutputProtocol, MainViewModelInputProtocol {}
 
-protocol MainRouterProtocol: class {}
+protocol MainRouterProtocol: class {
+    var emailModule: EmailWireFrame.EmailModule { get }
+    var sharedModule: SharedWireFrame.SharedModule { get }
+    var viewedModule: ViewedWireframe.ViewedModule { get }
+}
 
 protocol MainViewModelDelegate: class {
     func didFetchData()

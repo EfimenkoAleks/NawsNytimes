@@ -13,6 +13,7 @@ class ViewedViewController: UIViewController {
         didSet {
             tableView.registerCell(type: ViewedTableViewCell.self)
             tableView.backgroundColor = .clear
+            tableView.rowHeight = 60
             tableView.delegate = self
             tableView.dataSource = self
         }

@@ -7,15 +7,21 @@
 
 import UIKit
 
-class ViewedWireFrame {
+class ViewedWireframe {
     
-    static func create() -> UIViewController {
+    public struct ViewedModule {
+        let view: UIViewController
+        let viewModel: ViewedViewModel
+        let router: ViewedRouter
+    }
+    
+    static func create(context: UIViewController) -> ViewedModule {
         let view = ViewedViewController()
         let router = ViewedRouter()
-        router.controller = view
-       let viewModel = ViewedViewModel(router: router)
+        router.controller = context
+        let viewModel = ViewedViewModel(router: router)
         view.viewModel = viewModel
         
-        return view
+        return ViewedModule(view: view, viewModel: viewModel, router: router)
     }
 }
