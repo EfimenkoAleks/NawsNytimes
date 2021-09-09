@@ -9,7 +9,7 @@ import Foundation
 
 protocol ViewedViewModelOutputProtocol: class {
     var countEmails: Int { get }
-    func itemForTable(index: Int) -> Emailed
+    func itemForTable(index: Int) -> Articles
 }
 
 protocol ViewedViewModelInputProtocol: class {}

@@ -15,15 +15,10 @@
 		CE1BC98126E6846500530874 /* MainIntemfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC98026E6846500530874 /* MainIntemfaces.swift */; };
 		CE1BC98526E6847D00530874 /* MainWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC98426E6847D00530874 /* MainWireFrame.swift */; };
 		CE1BC98826E6848F00530874 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC98726E6848F00530874 /* MainRouter.swift */; };
-		CE1BC98C26E684A700530874 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC98A26E684A700530874 /* MainViewController.swift */; };
-		CE1BC98D26E684A700530874 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1BC98B26E684A700530874 /* MainViewController.xib */; };
 		CE1BC99026E685BC00530874 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC98F26E685BC00530874 /* MainViewModel.swift */; };
-		CE1BC99426E6ADA000530874 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC99226E6ADA000530874 /* MainTableViewCell.swift */; };
-		CE1BC99526E6ADA000530874 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1BC99326E6ADA000530874 /* MainTableViewCell.xib */; };
 		CE1BC99D26E76DA700530874 /* Extension+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC99C26E76DA700530874 /* Extension+TableView.swift */; };
 		CE1BC9A326E7847D00530874 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC9A226E7847D00530874 /* Services.swift */; };
 		CE1BC9A926E7893600530874 /* ArticleListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC9A826E7893600530874 /* ArticleListRequest.swift */; };
-		CE1BC9AC26E7C38200530874 /* MostEmailedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC9AB26E7C38200530874 /* MostEmailedList.swift */; };
 		CE73845C26E7F2EB00C81FDD /* ViewedMicroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73845B26E7F2EB00C81FDD /* ViewedMicroService.swift */; };
 		CE73846026E7F54E00C81FDD /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73845F26E7F54E00C81FDD /* ConfigurationService.swift */; };
 		CE73846726E8071000C81FDD /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73846626E8071000C81FDD /* SplashRouter.swift */; };
@@ -56,6 +51,9 @@
 		CE7384C426E8C8A500C81FDD /* ViewedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7384C226E8C8A500C81FDD /* ViewedTableViewCell.swift */; };
 		CE7384C526E8C8A500C81FDD /* ViewedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7384C326E8C8A500C81FDD /* ViewedTableViewCell.xib */; };
 		CE7384C826E8C8C300C81FDD /* ViewedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7384C726E8C8C300C81FDD /* ViewedViewModel.swift */; };
+		CE7384D026E91D2C00C81FDD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7384CE26E91D2C00C81FDD /* MainViewController.swift */; };
+		CE7384D126E91D2C00C81FDD /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7384CF26E91D2C00C81FDD /* MainViewController.xib */; };
+		CE8688B526EA1E2200829140 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8688B426EA1E2200829140 /* APIModel.swift */; };
 		CEA59C8126E7DE8F00377780 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8026E7DE8F00377780 /* DIContainer.swift */; };
 		CEA59C8526E7E06200377780 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8426E7E06200377780 /* APIService.swift */; };
 		CEA59C8826E7E1D100377780 /* APIServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8726E7E1D100377780 /* APIServiceImplementation.swift */; };
@@ -76,15 +74,10 @@
 		CE1BC98026E6846500530874 /* MainIntemfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainIntemfaces.swift; sourceTree = "<group>"; };
 		CE1BC98426E6847D00530874 /* MainWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireFrame.swift; sourceTree = "<group>"; };
 		CE1BC98726E6848F00530874 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
-		CE1BC98A26E684A700530874 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		CE1BC98B26E684A700530874 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		CE1BC98F26E685BC00530874 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		CE1BC99226E6ADA000530874 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
-		CE1BC99326E6ADA000530874 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		CE1BC99C26E76DA700530874 /* Extension+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+TableView.swift"; sourceTree = "<group>"; };
 		CE1BC9A226E7847D00530874 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		CE1BC9A826E7893600530874 /* ArticleListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListRequest.swift; sourceTree = "<group>"; };
-		CE1BC9AB26E7C38200530874 /* MostEmailedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostEmailedList.swift; sourceTree = "<group>"; };
 		CE73845B26E7F2EB00C81FDD /* ViewedMicroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedMicroService.swift; sourceTree = "<group>"; };
 		CE73845F26E7F54E00C81FDD /* ConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
 		CE73846626E8071000C81FDD /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
@@ -117,6 +110,9 @@
 		CE7384C226E8C8A500C81FDD /* ViewedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedTableViewCell.swift; sourceTree = "<group>"; };
 		CE7384C326E8C8A500C81FDD /* ViewedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewedTableViewCell.xib; sourceTree = "<group>"; };
 		CE7384C726E8C8C300C81FDD /* ViewedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedViewModel.swift; sourceTree = "<group>"; };
+		CE7384CE26E91D2C00C81FDD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CE7384CF26E91D2C00C81FDD /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		CE8688B426EA1E2200829140 /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		CEA59C8026E7DE8F00377780 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		CEA59C8426E7E06200377780 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		CEA59C8726E7E1D100377780 /* APIServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceImplementation.swift; sourceTree = "<group>"; };
@@ -215,10 +211,8 @@
 		CE1BC97D26E6843600530874 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CE1BC98A26E684A700530874 /* MainViewController.swift */,
-				CE1BC98B26E684A700530874 /* MainViewController.xib */,
-				CE1BC99226E6ADA000530874 /* MainTableViewCell.swift */,
-				CE1BC99326E6ADA000530874 /* MainTableViewCell.xib */,
+				CE7384CE26E91D2C00C81FDD /* MainViewController.swift */,
+				CE7384CF26E91D2C00C81FDD /* MainViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -272,7 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				CE1BC9A826E7893600530874 /* ArticleListRequest.swift */,
-				CE1BC9AB26E7C38200530874 /* MostEmailedList.swift */,
+				CE8688B426EA1E2200829140 /* APIModel.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -502,12 +496,11 @@
 				CE1BC97026E6440E00530874 /* LaunchScreen.storyboard in Resources */,
 				CE73849126E89E8F00C81FDD /* EmailTableViewCell.xib in Resources */,
 				CE7384BF26E8C87000C81FDD /* ViewedViewController.xib in Resources */,
-				CE1BC98D26E684A700530874 /* MainViewController.xib in Resources */,
-				CE1BC99526E6ADA000530874 /* MainTableViewCell.xib in Resources */,
 				CE7384C526E8C8A500C81FDD /* ViewedTableViewCell.xib in Resources */,
 				CE73848926E89BD900C81FDD /* EmailViewController.xib in Resources */,
 				CE7384AB26E8A95E00C81FDD /* SharedTableViewCell.xib in Resources */,
 				CE73847226E807EC00C81FDD /* SplashViewController.xib in Resources */,
+				CE7384D126E91D2C00C81FDD /* MainViewController.xib in Resources */,
 				CE1BC96D26E6440E00530874 /* Assets.xcassets in Resources */,
 				CE7384A326E8A55600C81FDD /* SharedViewController.xib in Resources */,
 			);
@@ -575,10 +568,8 @@
 				CE73849B26E8A52500C81FDD /* SharedRouter.swift in Sources */,
 				CE73847C26E89ACB00C81FDD /* EmailRouter.swift in Sources */,
 				CE1BC98826E6848F00530874 /* MainRouter.swift in Sources */,
-				CE1BC99426E6ADA000530874 /* MainTableViewCell.swift in Sources */,
 				CE73847126E807EC00C81FDD /* SplashViewController.swift in Sources */,
 				CE73846726E8071000C81FDD /* SplashRouter.swift in Sources */,
-				CE1BC9AC26E7C38200530874 /* MostEmailedList.swift in Sources */,
 				CE7384C426E8C8A500C81FDD /* ViewedTableViewCell.swift in Sources */,
 				CE7384AA26E8A95E00C81FDD /* SharedTableViewCell.swift in Sources */,
 				CE73848326E89B2F00C81FDD /* EmailWireFrame.swift in Sources */,
@@ -591,14 +582,15 @@
 				CE1BC99D26E76DA700530874 /* Extension+TableView.swift in Sources */,
 				CE73846A26E8073200C81FDD /* SplashInterfaces.swift in Sources */,
 				CE73846026E7F54E00C81FDD /* ConfigurationService.swift in Sources */,
+				CE8688B526EA1E2200829140 /* APIModel.swift in Sources */,
 				CEA59C8526E7E06200377780 /* APIService.swift in Sources */,
 				CE73848026E89B0D00C81FDD /* EmailInterfaces.swift in Sources */,
 				CE73847526E8088C00C81FDD /* SplashViewModel.swift in Sources */,
 				CE73848826E89BD900C81FDD /* EmailViewController.swift in Sources */,
 				CE1BC9A326E7847D00530874 /* Services.swift in Sources */,
 				CEA59C8826E7E1D100377780 /* APIServiceImplementation.swift in Sources */,
+				CE7384D026E91D2C00C81FDD /* MainViewController.swift in Sources */,
 				CE1BC98526E6847D00530874 /* MainWireFrame.swift in Sources */,
-				CE1BC98C26E684A700530874 /* MainViewController.swift in Sources */,
 				CE1BC96B26E6440B00530874 /* NewsNytimes.xcdatamodeld in Sources */,
 				CE1BC98126E6846500530874 /* MainIntemfaces.swift in Sources */,
 				CE7384BA26E8C85100C81FDD /* ViewedWireframe.swift in Sources */,

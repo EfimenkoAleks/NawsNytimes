@@ -10,38 +10,64 @@ import Alamofire
 
 class APIServiceImplementation {
     
-    let url = "https://api.nytimes.com/svc/mostpopular/v2/emailed/7.json?api-key=E7b7aqpeEq65jjAODAlcGgNEQcakSnFX"
+    let baseUrl = "https://api.nytimes.com/svc/mostpopular/v2/"
+    let clientId = "api-key=E7b7aqpeEq65jjAODAlcGgNEQcakSnFX"
     
+    private enum Endpoint {
+        case email
+        case shared
+        case viewed
+        
+        var path: String {
+            switch self {
+            case .email:
+                return "emailed/30.json?"
+            case .shared:
+                return "shared/30/facebook.json?"
+            case .viewed:
+                return "viewed/30.json?"
+            }
+        }
+    }
 }
 
 extension APIServiceImplementation: APIService {
     
     
-    func getEmialedList(completionHandler: @escaping (Result<MostEmailedList, Error>) -> Void) {
+    func getEmialedList(completionHandler: @escaping (APIModel) -> Void) {
         
+        let url = baseUrl + Endpoint.email.path + clientId
         AF.request(url)
           .validate()
-          .responseDecodable(of: MostEmailedList.self) { (response) in
-            guard let films = response.value else { return }
-            print(films.results?.first?.title! ?? "")
+          .responseDecodable(of: APIModel.self) { (response) in
+            guard let email = response.value else { return }
+            print(email.results?.first?.title! ?? "")
+            completionHandler(email)
+            
           }
     }
     
-    func getSharedList(completionHandler: @escaping (Result<MostEmailedList, Error>) -> Void) {
+    func getSharedList(completionHandler: @escaping (APIModel) -> Void) {
+        
+        let url = baseUrl + Endpoint.shared.path + clientId
         AF.request(url)
           .validate()
-          .responseDecodable(of: MostEmailedList.self) { (response) in
-            guard let films = response.value else { return }
-            print(films.results?.first?.title! ?? "")
+          .responseDecodable(of: APIModel.self) { (response) in
+            guard let shared = response.value else { return }
+            print(shared.results?.first?.title! ?? "")
+            completionHandler(shared)
           }
     }
     
-    func getViewedList(completionHandler: @escaping (Result<MostEmailedList, Error>) -> Void) {
+    func getViewedList(completionHandler: @escaping (APIModel) -> Void) {
+        
+        let url = baseUrl + Endpoint.viewed.path + clientId
         AF.request(url)
           .validate()
-          .responseDecodable(of: MostEmailedList.self) { (response) in
-            guard let films = response.value else { return }
-            print(films.results?.first?.title! ?? "")
+          .responseDecodable(of: APIModel.self) { (response) in
+            guard let viewed = response.value else { return }
+            print(viewed.results?.first?.title! ?? "")
+            completionHandler(viewed)
           }
     }
 }

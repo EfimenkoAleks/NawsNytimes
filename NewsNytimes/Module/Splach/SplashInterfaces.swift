@@ -7,7 +7,9 @@
 
 import Foundation
 
-protocol SplashViewModelOutputProtocol: class {}
+protocol SplashViewModelOutputProtocol: class {
+    var delegate: SplashViewModelDelegate? { get set }
+}
 
 protocol SplashViewModelInputProtocol: class {
     func goToMain()

@@ -10,7 +10,7 @@ import Foundation
 class ViewedViewModel {
     private var router: ViewedRouterProtocol
     weak var delegate: ViewedViewModelDelegate?
-    private var emails: [Emailed]
+    private var emails: [Articles]
     private var service: ViewedMicroService
     
     init(
@@ -33,7 +33,7 @@ extension ViewedViewModel: ViewedViewModelProtocol {
         return self.emails.count
     }
     
-    func itemForTable(index: Int) -> Emailed {
+    func itemForTable(index: Int) -> Articles {
         return self.emails[index]
     }
 }

@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,35 +17,52 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzd-ey-snd">
-                        <rect key="frame" x="20" y="0.0" width="220" height="86"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HdE-VX-WWF">
-                        <rect key="frame" x="260" y="23" width="40" height="40"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfC-9p-VeT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Su3-TD-hb2">
+                                <rect key="frame" x="20" y="0.0" width="220" height="82"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CNl-T4-EDU">
+                                <rect key="frame" x="260" y="21" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="9X6-u1-gLV"/>
+                                    <constraint firstAttribute="height" constant="40" id="Dhr-4g-Die"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="40" id="JZC-6g-sn9"/>
-                            <constraint firstAttribute="width" constant="40" id="hhF-dM-pZw"/>
+                            <constraint firstItem="Su3-TD-hb2" firstAttribute="leading" secondItem="pfC-9p-VeT" secondAttribute="leading" constant="20" id="Ks4-us-cID"/>
+                            <constraint firstAttribute="bottom" secondItem="Su3-TD-hb2" secondAttribute="bottom" id="WZy-MM-knx"/>
+                            <constraint firstAttribute="trailing" secondItem="CNl-T4-EDU" secondAttribute="trailing" constant="20" id="oRy-vn-yOZ"/>
+                            <constraint firstItem="CNl-T4-EDU" firstAttribute="leading" secondItem="Su3-TD-hb2" secondAttribute="trailing" constant="20" id="vNx-0q-StT"/>
+                            <constraint firstItem="CNl-T4-EDU" firstAttribute="centerY" secondItem="pfC-9p-VeT" secondAttribute="centerY" id="waz-WP-gnR"/>
+                            <constraint firstItem="Su3-TD-hb2" firstAttribute="top" secondItem="pfC-9p-VeT" secondAttribute="top" id="z0C-lp-8EB"/>
                         </constraints>
-                    </imageView>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="Lzd-ey-snd" secondAttribute="bottom" id="IDr-ud-6jf"/>
-                    <constraint firstAttribute="top" secondItem="Lzd-ey-snd" secondAttribute="top" id="KnS-SV-flA"/>
-                    <constraint firstItem="HdE-VX-WWF" firstAttribute="leading" secondItem="Lzd-ey-snd" secondAttribute="trailing" constant="20" id="lNx-Sm-8a3"/>
-                    <constraint firstAttribute="trailing" secondItem="HdE-VX-WWF" secondAttribute="trailing" constant="20" id="lTI-dR-wRq"/>
-                    <constraint firstItem="Lzd-ey-snd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="q3S-6A-GVE"/>
-                    <constraint firstItem="HdE-VX-WWF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zmr-08-Jd4"/>
+                    <constraint firstAttribute="bottom" secondItem="pfC-9p-VeT" secondAttribute="bottom" constant="4" id="T88-dG-hUo"/>
+                    <constraint firstItem="pfC-9p-VeT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Y3P-Xv-gOX"/>
+                    <constraint firstAttribute="trailing" secondItem="pfC-9p-VeT" secondAttribute="trailing" id="dv4-ga-YpA"/>
+                    <constraint firstItem="pfC-9p-VeT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pFd-HV-HWq"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="emailTextLabel" destination="Lzd-ey-snd" id="GTf-Ic-hnw"/>
-                <outlet property="statImageView" destination="HdE-VX-WWF" id="daF-r8-K1R"/>
+                <outlet property="emailTextLabel" destination="Su3-TD-hb2" id="g9v-EP-Nbe"/>
+                <outlet property="statImageView" destination="CNl-T4-EDU" id="4Oz-a9-Y3G"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="122.54464285714285"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -9,13 +9,19 @@ import UIKit
 
 class SharedWireFrame {
     
-    static func create() -> UIViewController {
+    public struct SharedModule {
+        let view: UIViewController
+        let viewModel: SharedViewModel
+        let router: SharedRouter
+    }
+    
+    static func create(context: UIViewController) -> SharedModule {
         let view = SharedViewController()
         let router = SharedRouter()
-        router.controller = view
-       let viewModel = SharedViewModel(router: router)
+        router.controller = context
+        let viewModel = SharedViewModel(router: router)
         view.viewModel = viewModel
         
-        return view
+        return SharedModule(view: view, viewModel: viewModel, router: router)
     }
 }

@@ -23,6 +23,7 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.viewModel.delegate = self
         self.view.backgroundColor = .systemBlue
         self.setupLoadIndikator()
     }

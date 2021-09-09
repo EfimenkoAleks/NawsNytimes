@@ -10,7 +10,7 @@ import Foundation
 class SharedViewModel {
     private var router: SharedRouterProtocol
     weak var delegate: SharedViewModelDelegate?
-    private var emails: [Emailed]
+    private var emails: [Articles]
     private var service: SharedMicroService
     
     init(
@@ -33,7 +33,7 @@ extension SharedViewModel: SharedViewModelProtocol {
         return self.emails.count
     }
     
-    func itemForTable(index: Int) -> Emailed {
+    func itemForTable(index: Int) -> Articles {
         return self.emails[index]
     }
 }

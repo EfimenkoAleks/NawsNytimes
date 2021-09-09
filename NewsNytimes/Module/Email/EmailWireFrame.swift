@@ -9,13 +9,19 @@ import UIKit
 
 class EmailWireFrame {
     
-    static func create() -> UIViewController {
+    public struct EmailModule {
+        let view: UIViewController
+        let viewModel: EmailViewModel
+        let router: EmailRouter
+    }
+    
+    static func create(context: UIViewController) -> EmailModule {
         let view = EmailViewController()
         let router = EmailRouter()
-        router.controller = view
+        router.controller = context
         let viewModel = EmailViewModel(router: router)
         view.viewModel = viewModel
         
-        return view
+        return EmailModule(view: view, viewModel: viewModel, router: router)
     }
 }

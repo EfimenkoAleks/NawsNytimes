@@ -11,7 +11,7 @@ class MainWireFrame {
     
     static func create() -> UIViewController {
         let view = MainViewController()
-        let router = MainRouter()
+        let router = MainRouter(context: view)
         router.controller = view
         let viewModel = MainViewModel(router: router)
         view.viewModel = viewModel

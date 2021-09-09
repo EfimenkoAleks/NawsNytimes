@@ -18,6 +18,7 @@ var window: UIWindow?
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let module = SplashWireFrame.create()
         let navigation = UINavigationController(rootViewController: module)
+ //       navigation.isNavigationBarHidden = true
         self.window?.rootViewController = navigation
         self.window?.makeKeyAndVisible()
         return true
