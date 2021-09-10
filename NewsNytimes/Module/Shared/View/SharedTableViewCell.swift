@@ -9,20 +9,21 @@ import UIKit
 
 class SharedTableViewCell: UITableViewCell {
  
-    @IBOutlet weak var sharedTextLabel: UILabel!
+    @IBOutlet private weak var sharedTextLabel: UILabel!
     
-    @IBOutlet weak var statImageView: UIButton!
+    @IBOutlet private weak var statImageView: UIButton!
     
     weak var delegate: CellButtonDelegate?
     private var article: Articles?
     
     override func awakeFromNib() {
             super.awakeFromNib()
-        self.backgroundColor = .clear
-        let image = UIImage(systemName: "star")?.withRenderingMode(.alwaysTemplate)
+        self.backgroundColor = .gray
+
+        let image = UIImage(systemName: "star", withConfiguration: UIImage.SymbolConfiguration(scale: .large))?.withRenderingMode(.alwaysTemplate)
         self.statImageView.contentEdgeInsets = .zero
         self.statImageView.setImage(image, for: .normal)
-        self.statImageView.tintColor = .systemGray2
+        self.statImageView.tintColor = .gray
     }
 
     func configure(model: Articles) {
@@ -30,7 +31,7 @@ class SharedTableViewCell: UITableViewCell {
         self.article = model
     }
     
-    @IBAction func actionButton(_ sender: UIButton) {
+    @IBAction private func actionButton(_ sender: UIButton) {
         guard let id = self.article?.id else { return }
         self.delegate?.addFavourites(index: id)
     }

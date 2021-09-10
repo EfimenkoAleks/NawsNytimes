@@ -11,7 +11,7 @@ class FavouriteViewController: UIViewController {
     
     var viewModel: FavouriteViewModelProtocol!
 
-    @IBOutlet weak var tableView: UITableView! {
+    @IBOutlet private weak var tableView: UITableView! {
         didSet {
             tableView.registerCell(type: FavouriteTableViewCell.self)
             tableView.backgroundColor = .clear
@@ -25,10 +25,8 @@ class FavouriteViewController: UIViewController {
         super.viewDidLoad()
 
         self.viewModel.delegate = self
-        self.view.backgroundColor = .systemPink
+        self.view.backgroundColor = .systemGray5
     }
-
-
 }
 
 extension FavouriteViewController: UITableViewDataSource {
@@ -45,8 +43,6 @@ extension FavouriteViewController: UITableViewDataSource {
         
         return cell
     }
-    
-    
 }
 
 extension FavouriteViewController: UITableViewDelegate {
@@ -54,6 +50,10 @@ extension FavouriteViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
 
         self.viewModel.deleteFauvorite(index: indexPath.row)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.viewModel.goToDetail(index: indexPath.row)
     }
 }
 

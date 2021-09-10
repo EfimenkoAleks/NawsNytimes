@@ -14,7 +14,6 @@ class SplashRouter {
 extension SplashRouter: SplashRouterProtocol {
     func goToMain() {
         let main = MainWireFrame.create()
-//        self.controller?.navigationController?.isNavigationBarHidden = true
         self.controller?.navigationController?.setViewControllers([main], animated: true)
     }
 }

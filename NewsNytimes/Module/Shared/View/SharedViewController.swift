@@ -9,7 +9,7 @@ import UIKit
 
 class SharedViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView! {
+    @IBOutlet private weak var tableView: UITableView! {
         didSet {
             tableView.registerCell(type: SharedTableViewCell.self)
             tableView.backgroundColor = .clear
@@ -24,7 +24,7 @@ class SharedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = .systemBlue
+        self.view.backgroundColor = .systemGray5
     }
 
 }
@@ -50,11 +50,13 @@ extension SharedViewController: UITableViewDataSource {
         
         return cell
     }
-    
-    
 }
 
-extension SharedViewController: UITableViewDelegate {}
+extension SharedViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.viewModel.goToDetail(index: indexPath.row)
+    }
+}
 
 extension SharedViewController: CellButtonDelegate {
     

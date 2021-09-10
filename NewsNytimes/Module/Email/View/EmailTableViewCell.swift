@@ -10,20 +10,20 @@ import CoreData
 
 class EmailTableViewCell: UITableViewCell {
    
-    @IBOutlet weak var tapButton: UIButton!
+    @IBOutlet private weak var tapButton: UIButton!
     
-    @IBOutlet weak var emailTextLabel: UILabel!
+    @IBOutlet private weak var emailTextLabel: UILabel!
     
     weak var delegate: CellButtonDelegate?
     private var article: Articles?
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.backgroundColor = .clear
-        let image = UIImage(systemName: "star")?.withRenderingMode(.alwaysTemplate)
+        self.backgroundColor = .gray
+        let image = UIImage(systemName: "star", withConfiguration: UIImage.SymbolConfiguration(scale: .large))?.withRenderingMode(.alwaysTemplate)
         self.tapButton.contentEdgeInsets = .zero
         self.tapButton.setImage(image, for: .normal)
-        self.tapButton.tintColor = .systemGray2
+        self.tapButton.tintColor = .gray
         
     }
     

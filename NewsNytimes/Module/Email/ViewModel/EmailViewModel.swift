@@ -53,4 +53,15 @@ extension EmailViewModel: EmailViewModelProtocol {
             }
         }
     }
+    
+    func goToDetail(index: Int) {
+      
+        let title = self.emails[index].title ?? "No title"
+        let text = self.emails[index].abstract ?? "No text"
+        let image = self.emails[index].media?.last?.mediaMetadata?.last?.url ?? "No image"
+        
+        let detailModel = DetailModel(title: title, abstract: text, image: image)
+        
+        self.router.goToDetail(model: detailModel)
+    }
 }

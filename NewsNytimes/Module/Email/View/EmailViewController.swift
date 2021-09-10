@@ -9,7 +9,7 @@ import UIKit
 
 class EmailViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView! {
+    @IBOutlet private weak var tableView: UITableView! {
         didSet {
             tableView.registerCell(type: EmailTableViewCell.self)
             tableView.backgroundColor = .clear
@@ -24,7 +24,7 @@ class EmailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = .systemBlue
+        self.view.backgroundColor = .systemGray5
     }
 
 }
@@ -44,11 +44,13 @@ extension EmailViewController: UITableViewDataSource {
        
         return cell
     }
-    
-    
 }
 
-extension EmailViewController: UITableViewDelegate {}
+extension EmailViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.viewModel.goToDetail(index: indexPath.row)
+    }
+}
 
 extension EmailViewController: CellButtonDelegate {
     

@@ -13,5 +13,8 @@ class FavouriteRouter {
 }
 
 extension FavouriteRouter: FavouriteRouterProtocol {
-    
+    func goToDetail(model: DetailModel) {
+        let view = DetailWireframe.create(model: model)
+        self.controller?.navigationController?.pushViewController(view, animated: true)
+    }
 }

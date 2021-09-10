@@ -10,7 +10,7 @@ import Foundation
 class SharedViewModel {
     private var router: SharedRouterProtocol
     weak var delegate: SharedViewModelDelegate?
-    private var emails: [Articles]
+    private var shared: [Articles]
     private var service: SharedMicroService
     private var dataSource: CoreDataManagerProtocol
     
@@ -20,11 +20,11 @@ class SharedViewModel {
         dataService: CoreDataManagerProtocol = DIContainer.default.coreDataArticles
          ) {
         self.router = router
-        self.emails = []
+        self.shared = []
         self.service = service
         self.dataSource = dataService
         if self.service.sharedList.count > 0 {
-            self.emails = self.service.sharedList
+            self.shared = self.service.sharedList
             self.delegate?.didFetchData()
         }
     }
@@ -33,15 +33,15 @@ class SharedViewModel {
 extension SharedViewModel: SharedViewModelProtocol {
     
     var countEmails: Int {
-        return self.emails.count
+        return self.shared.count
     }
     
     func itemForTable(index: Int) -> Articles {
-        return self.emails[index]
+        return self.shared[index]
     }
     
     func addToFavourites(id: Double) {
-        let model = self.emails.first(where: {$0.id == id})
+        let model = self.shared.first(where: {$0.id == id})
         guard let title = model?.title, let url = model?.media?.last?.mediaMetadata?.last?.url, let abstract = model?.abstract else { return }
         
         self.dataSource.save(title: title, image: url, abstract: abstract) { (result) in
@@ -52,6 +52,17 @@ extension SharedViewModel: SharedViewModelProtocol {
                 print(error.localizedDescription)
             }
         }
+    }
+    
+    func goToDetail(index: Int) {
+      
+        let title = self.shared[index].title ?? "No title"
+        let text = self.shared[index].abstract ?? "No text"
+        let image = self.shared[index].media?.last?.mediaMetadata?.last?.url ?? "No image"
+        
+        let detailModel = DetailModel(title: title, abstract: text, image: image)
+        
+        self.router.goToDetail(model: detailModel)
     }
 }
 

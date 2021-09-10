@@ -12,5 +12,8 @@ class EmailRouter {
 }
 
 extension EmailRouter: EmailRouterProtocol {
-    
+    func goToDetail(model: DetailModel) {
+        let view = DetailWireframe.create(model: model)
+        self.controller?.navigationController?.pushViewController(view, animated: true)
+    }
 }
