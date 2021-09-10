@@ -60,4 +60,14 @@ extension FavouriteViewModel: FavouriteViewModelProtocol {
             }
         }
     }
+    
+    func goToDetail(index: Int) {
+        let model = self.tasks[index]
+        let title = model.value(forKey: "title") as? String ?? "N/A"
+        let text = model.value(forKey: "abstract") as? String ?? "N/A"
+        let image = model.value(forKey: "image") as? String ?? "N/A"
+        let detailModel = DetailModel(title: title, abstract: text, image: image)
+        
+        self.router.goToDetail(model: detailModel)
+    }
 }

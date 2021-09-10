@@ -10,8 +10,13 @@ import CoreData
 
 class FavouriteTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var abstractLabel: UILabel!
-   
+    @IBOutlet private weak var abstractLabel: UILabel!
+    
+    override func awakeFromNib() {
+            super.awakeFromNib()
+        self.backgroundColor = .gray
+    }
+    
     func configure(model: NSManagedObject) {
         let title = model.value(forKey: "title") as? String ?? "N/A"
         self.abstractLabel.text = title

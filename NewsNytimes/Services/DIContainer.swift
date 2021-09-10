@@ -21,5 +21,7 @@ struct DIContainer {
     
     lazy var configurationService: ConfigurationService = ConfigurationServiceImplementation(emailedService: self.emailedMicroService, sharedService: self.sharedMicroService, viewedService: self.viewedMicroService)
     
+    lazy var imageService: ImageService = ImageServiceImplementation()
+    
     lazy var coreDataArticles: CoreDataManagerProtocol = ArticleDataBase()
 }

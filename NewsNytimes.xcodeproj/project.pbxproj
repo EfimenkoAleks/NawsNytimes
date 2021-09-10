@@ -18,7 +18,6 @@
 		CE1BC99026E685BC00530874 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC98F26E685BC00530874 /* MainViewModel.swift */; };
 		CE1BC99D26E76DA700530874 /* Extension+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC99C26E76DA700530874 /* Extension+TableView.swift */; };
 		CE1BC9A326E7847D00530874 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC9A226E7847D00530874 /* Services.swift */; };
-		CE1BC9A926E7893600530874 /* ArticleListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC9A826E7893600530874 /* ArticleListRequest.swift */; };
 		CE73845C26E7F2EB00C81FDD /* ViewedMicroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73845B26E7F2EB00C81FDD /* ViewedMicroService.swift */; };
 		CE73846026E7F54E00C81FDD /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73845F26E7F54E00C81FDD /* ConfigurationService.swift */; };
 		CE73846726E8071000C81FDD /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73846626E8071000C81FDD /* SplashRouter.swift */; };
@@ -64,6 +63,19 @@
 		CE8688E326EA886100829140 /* ArticleDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8688E226EA886100829140 /* ArticleDataBase.swift */; };
 		CE8688E726EA9CA700829140 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8688E526EA9CA700829140 /* FavouriteTableViewCell.swift */; };
 		CE8688E826EA9CA700829140 /* FavouriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8688E626EA9CA700829140 /* FavouriteTableViewCell.xib */; };
+		CE8688EF26EB38D400829140 /* DetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8688EE26EB38D400829140 /* DetailWireframe.swift */; };
+		CE8688F526EB390E00829140 /* DetailInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8688F426EB390E00829140 /* DetailInterfaces.swift */; };
+		CE8688F926EB392700829140 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8688F726EB392700829140 /* DetailViewController.swift */; };
+		CE8688FA26EB392700829140 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8688F826EB392700829140 /* DetailViewController.xib */; };
+		CE8688FE26EB395900829140 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8688FD26EB395900829140 /* DetailViewModel.swift */; };
+		CE86890226EB3DC000829140 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86890126EB3DC000829140 /* DetailModel.swift */; };
+		CE86890726EB41C300829140 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86890626EB41C300829140 /* ImageService.swift */; };
+		CE86890C26EB495400829140 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86890A26EB495400829140 /* TitleTableViewCell.swift */; };
+		CE86890D26EB495400829140 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE86890B26EB495400829140 /* TitleTableViewCell.xib */; };
+		CE86891126EB4AA500829140 /* AbstractTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86890F26EB4AA500829140 /* AbstractTableViewCell.swift */; };
+		CE86891226EB4AA500829140 /* AbstractTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE86891026EB4AA500829140 /* AbstractTableViewCell.xib */; };
+		CE86891626EB4C3600829140 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86891426EB4C3600829140 /* ImageTableViewCell.swift */; };
+		CE86891726EB4C3600829140 /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE86891526EB4C3600829140 /* ImageTableViewCell.xib */; };
 		CEA59C8126E7DE8F00377780 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8026E7DE8F00377780 /* DIContainer.swift */; };
 		CEA59C8526E7E06200377780 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8426E7E06200377780 /* APIService.swift */; };
 		CEA59C8826E7E1D100377780 /* APIServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8726E7E1D100377780 /* APIServiceImplementation.swift */; };
@@ -87,7 +99,6 @@
 		CE1BC98F26E685BC00530874 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		CE1BC99C26E76DA700530874 /* Extension+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+TableView.swift"; sourceTree = "<group>"; };
 		CE1BC9A226E7847D00530874 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
-		CE1BC9A826E7893600530874 /* ArticleListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListRequest.swift; sourceTree = "<group>"; };
 		CE73845B26E7F2EB00C81FDD /* ViewedMicroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedMicroService.swift; sourceTree = "<group>"; };
 		CE73845F26E7F54E00C81FDD /* ConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
 		CE73846626E8071000C81FDD /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
@@ -133,6 +144,19 @@
 		CE8688E226EA886100829140 /* ArticleDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDataBase.swift; sourceTree = "<group>"; };
 		CE8688E526EA9CA700829140 /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
 		CE8688E626EA9CA700829140 /* FavouriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteTableViewCell.xib; sourceTree = "<group>"; };
+		CE8688EE26EB38D400829140 /* DetailWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWireframe.swift; sourceTree = "<group>"; };
+		CE8688F426EB390E00829140 /* DetailInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInterfaces.swift; sourceTree = "<group>"; };
+		CE8688F726EB392700829140 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CE8688F826EB392700829140 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		CE8688FD26EB395900829140 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		CE86890126EB3DC000829140 /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		CE86890626EB41C300829140 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		CE86890A26EB495400829140 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		CE86890B26EB495400829140 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
+		CE86890F26EB4AA500829140 /* AbstractTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTableViewCell.swift; sourceTree = "<group>"; };
+		CE86891026EB4AA500829140 /* AbstractTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AbstractTableViewCell.xib; sourceTree = "<group>"; };
+		CE86891426EB4C3600829140 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		CE86891526EB4C3600829140 /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
 		CEA59C8026E7DE8F00377780 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		CEA59C8426E7E06200377780 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		CEA59C8726E7E1D100377780 /* APIServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceImplementation.swift; sourceTree = "<group>"; };
@@ -206,7 +230,6 @@
 		CE1BC97B26E683FF00530874 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				CE1BC97F26E6844A00530874 /* Model */,
 				CE1BC97E26E6844000530874 /* ViewModel */,
 				CE1BC97D26E6843600530874 /* View */,
 				CE1BC98026E6846500530874 /* MainIntemfaces.swift */,
@@ -219,6 +242,7 @@
 		CE1BC97C26E6841A00530874 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				CE8688EB26EB389000829140 /* Detail */,
 				CE8688B926EA2DA400829140 /* Favourite */,
 				CE7384B026E8C79D00C81FDD /* Viewed */,
 				CE73849426E8A4C600C81FDD /* Shared */,
@@ -246,13 +270,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		CE1BC97F26E6844A00530874 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		CE1BC99726E76CD600530874 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +281,7 @@
 		CE1BC9A126E7846100530874 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CE86890526EB41A300829140 /* ImageService */,
 				CE8688CD26EA82AD00829140 /* CoreDataManager */,
 				CE73845E26E7F50E00C81FDD /* ConfigurationService */,
 				CE73845A26E7F28D00C81FDD /* ViewedMicroService */,
@@ -287,7 +305,6 @@
 		CE1BC9A726E788D900530874 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				CE1BC9A826E7893600530874 /* ArticleListRequest.swift */,
 				CE8688B426EA1E2200829140 /* APIModel.swift */,
 			);
 			path = Network;
@@ -471,6 +488,65 @@
 			path = CoreDataManager;
 			sourceTree = "<group>";
 		};
+		CE8688EB26EB389000829140 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				CE86890026EB3DA400829140 /* Model */,
+				CE8688ED26EB38A400829140 /* ViewModel */,
+				CE8688EC26EB389D00829140 /* View */,
+				CE8688EE26EB38D400829140 /* DetailWireframe.swift */,
+				CE8688F426EB390E00829140 /* DetailInterfaces.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		CE8688EC26EB389D00829140 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE86890926EB491E00829140 /* Cell */,
+				CE8688F726EB392700829140 /* DetailViewController.swift */,
+				CE8688F826EB392700829140 /* DetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE8688ED26EB38A400829140 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE8688FD26EB395900829140 /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE86890026EB3DA400829140 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE86890126EB3DC000829140 /* DetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE86890526EB41A300829140 /* ImageService */ = {
+			isa = PBXGroup;
+			children = (
+				CE86890626EB41C300829140 /* ImageService.swift */,
+			);
+			path = ImageService;
+			sourceTree = "<group>";
+		};
+		CE86890926EB491E00829140 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE86890A26EB495400829140 /* TitleTableViewCell.swift */,
+				CE86890B26EB495400829140 /* TitleTableViewCell.xib */,
+				CE86890F26EB4AA500829140 /* AbstractTableViewCell.swift */,
+				CE86891026EB4AA500829140 /* AbstractTableViewCell.xib */,
+				CE86891426EB4C3600829140 /* ImageTableViewCell.swift */,
+				CE86891526EB4C3600829140 /* ImageTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		CEA59C8326E7E04D00377780 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -556,8 +632,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1BC97026E6440E00530874 /* LaunchScreen.storyboard in Resources */,
+				CE8688FA26EB392700829140 /* DetailViewController.xib in Resources */,
 				CE73849126E89E8F00C81FDD /* EmailTableViewCell.xib in Resources */,
 				CE7384BF26E8C87000C81FDD /* ViewedViewController.xib in Resources */,
+				CE86890D26EB495400829140 /* TitleTableViewCell.xib in Resources */,
 				CE7384C526E8C8A500C81FDD /* ViewedTableViewCell.xib in Resources */,
 				CE73848926E89BD900C81FDD /* EmailViewController.xib in Resources */,
 				CE8688C826EA2E4000829140 /* FavouriteViewController.xib in Resources */,
@@ -566,6 +644,8 @@
 				CE7384D126E91D2C00C81FDD /* MainViewController.xib in Resources */,
 				CE1BC96D26E6440E00530874 /* Assets.xcassets in Resources */,
 				CE7384A326E8A55600C81FDD /* SharedViewController.xib in Resources */,
+				CE86891726EB4C3600829140 /* ImageTableViewCell.xib in Resources */,
+				CE86891226EB4AA500829140 /* AbstractTableViewCell.xib in Resources */,
 				CE8688E826EA9CA700829140 /* FavouriteTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,12 +699,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE86890C26EB495400829140 /* TitleTableViewCell.swift in Sources */,
+				CE8688F526EB390E00829140 /* DetailInterfaces.swift in Sources */,
 				CE7384BE26E8C87000C81FDD /* ViewedViewController.swift in Sources */,
+				CE8688EF26EB38D400829140 /* DetailWireframe.swift in Sources */,
 				CE73849E26E8A53900C81FDD /* SharedWireFrame.swift in Sources */,
 				CE7384B426E8C7DA00C81FDD /* ViewedRouter.swift in Sources */,
-				CE1BC9A926E7893600530874 /* ArticleListRequest.swift in Sources */,
 				CE73849826E8A4FF00C81FDD /* SharedInterfaces.swift in Sources */,
 				CE8688C326EA2E0A00829140 /* FavouriteInterfaces.swift in Sources */,
+				CE86890726EB41C300829140 /* ImageService.swift in Sources */,
 				CE1BC99026E685BC00530874 /* MainViewModel.swift in Sources */,
 				CE8688BD26EA2DE000829140 /* FavouriteRouter.swift in Sources */,
 				CE7384A626E8A56F00C81FDD /* SharedViewModel.swift in Sources */,
@@ -637,9 +720,11 @@
 				CE73847C26E89ACB00C81FDD /* EmailRouter.swift in Sources */,
 				CE1BC98826E6848F00530874 /* MainRouter.swift in Sources */,
 				CE73847126E807EC00C81FDD /* SplashViewController.swift in Sources */,
+				CE8688F926EB392700829140 /* DetailViewController.swift in Sources */,
 				CE8688E726EA9CA700829140 /* FavouriteTableViewCell.swift in Sources */,
 				CE73846726E8071000C81FDD /* SplashRouter.swift in Sources */,
 				CE8688CF26EA863800829140 /* CoreDataBase.swift in Sources */,
+				CE8688FE26EB395900829140 /* DetailViewModel.swift in Sources */,
 				CE7384C426E8C8A500C81FDD /* ViewedTableViewCell.swift in Sources */,
 				CE7384AA26E8A95E00C81FDD /* SharedTableViewCell.swift in Sources */,
 				CE8688CB26EA2FDD00829140 /* FavouriteViewModel.swift in Sources */,
@@ -653,16 +738,19 @@
 				CEA59C8126E7DE8F00377780 /* DIContainer.swift in Sources */,
 				CE1BC99D26E76DA700530874 /* Extension+TableView.swift in Sources */,
 				CE73846A26E8073200C81FDD /* SplashInterfaces.swift in Sources */,
+				CE86891126EB4AA500829140 /* AbstractTableViewCell.swift in Sources */,
 				CE73846026E7F54E00C81FDD /* ConfigurationService.swift in Sources */,
 				CE8688B526EA1E2200829140 /* APIModel.swift in Sources */,
 				CEA59C8526E7E06200377780 /* APIService.swift in Sources */,
 				CE73848026E89B0D00C81FDD /* EmailInterfaces.swift in Sources */,
+				CE86891626EB4C3600829140 /* ImageTableViewCell.swift in Sources */,
 				CE73847526E8088C00C81FDD /* SplashViewModel.swift in Sources */,
 				CE73848826E89BD900C81FDD /* EmailViewController.swift in Sources */,
 				CE1BC9A326E7847D00530874 /* Services.swift in Sources */,
 				CEA59C8826E7E1D100377780 /* APIServiceImplementation.swift in Sources */,
 				CE7384D026E91D2C00C81FDD /* MainViewController.swift in Sources */,
 				CE1BC98526E6847D00530874 /* MainWireFrame.swift in Sources */,
+				CE86890226EB3DC000829140 /* DetailModel.swift in Sources */,
 				CE1BC96B26E6440B00530874 /* NewsNytimes.xcdatamodeld in Sources */,
 				CE1BC98126E6846500530874 /* MainIntemfaces.swift in Sources */,
 				CE7384BA26E8C85100C81FDD /* ViewedWireframe.swift in Sources */,

@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,43 +16,38 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ylp-0w-gwC">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kek-da-vqT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDR-Ha-d1J">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAb-u3-x0g">
                                 <rect key="frame" x="20" y="0.0" width="280" height="86"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="CDR-Ha-d1J" firstAttribute="leading" secondItem="ylp-0w-gwC" secondAttribute="leading" constant="20" id="3Nb-qh-nhp"/>
-                            <constraint firstAttribute="bottom" secondItem="CDR-Ha-d1J" secondAttribute="bottom" id="VUt-iq-dQg"/>
-                            <constraint firstAttribute="trailing" secondItem="CDR-Ha-d1J" secondAttribute="trailing" constant="20" id="d5u-HW-sbr"/>
-                            <constraint firstItem="CDR-Ha-d1J" firstAttribute="top" secondItem="ylp-0w-gwC" secondAttribute="top" id="gdH-Qo-qWU"/>
+                            <constraint firstItem="kAb-u3-x0g" firstAttribute="leading" secondItem="Kek-da-vqT" secondAttribute="leading" constant="20" id="SfH-87-DUc"/>
+                            <constraint firstAttribute="trailing" secondItem="kAb-u3-x0g" secondAttribute="trailing" constant="20" id="b7u-JY-mLX"/>
+                            <constraint firstAttribute="bottom" secondItem="kAb-u3-x0g" secondAttribute="bottom" id="c8D-tX-V5b"/>
+                            <constraint firstItem="kAb-u3-x0g" firstAttribute="top" secondItem="Kek-da-vqT" secondAttribute="top" id="yb5-sI-qSq"/>
                         </constraints>
                     </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="ylp-0w-gwC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="71M-ly-8cQ"/>
-                    <constraint firstItem="ylp-0w-gwC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="EBL-zs-jr7"/>
-                    <constraint firstAttribute="trailing" secondItem="ylp-0w-gwC" secondAttribute="trailing" id="jXx-vh-6H8"/>
-                    <constraint firstAttribute="bottom" secondItem="ylp-0w-gwC" secondAttribute="bottom" constant="4" id="qat-49-KHJ"/>
+                    <constraint firstAttribute="bottom" secondItem="Kek-da-vqT" secondAttribute="bottom" constant="4" id="FiX-xe-AAp"/>
+                    <constraint firstItem="Kek-da-vqT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Hyd-gP-sh1"/>
+                    <constraint firstAttribute="trailing" secondItem="Kek-da-vqT" secondAttribute="trailing" id="h0Z-NE-p4m"/>
+                    <constraint firstItem="Kek-da-vqT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wHB-98-XVj"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="abstractLabel" destination="CDR-Ha-d1J" id="3sI-lD-hd6"/>
+                <outlet property="abstractLabel" destination="kAb-u3-x0g" id="bXy-b1-hXe"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="105.13392857142857"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

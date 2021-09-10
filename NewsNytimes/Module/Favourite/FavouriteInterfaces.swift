@@ -16,11 +16,14 @@ protocol FavouriteViewModelOutputProtocol: class {
 
 protocol FavouriteViewModelInputProtocol: class {
     func deleteFauvorite(index: Int)
+    func goToDetail(index: Int)
 }
 
 protocol FavouriteViewModelProtocol: FavouriteViewModelOutputProtocol, FavouriteViewModelInputProtocol {}
 
-protocol FavouriteRouterProtocol: class {}
+protocol FavouriteRouterProtocol: class {
+    func goToDetail(model: DetailModel)
+}
 
 protocol FavouriteViewModelDelegate: class {
     func didFetchData()

@@ -14,11 +14,14 @@ protocol EmailViewModelOutputProtocol: class {
 
 protocol EmailViewModelInputProtocol: class {
     func addToFavourites(id: Double)
+    func goToDetail(index: Int)
 }
 
 protocol EmailViewModelProtocol: EmailViewModelOutputProtocol, EmailViewModelInputProtocol {}
 
-protocol EmailRouterProtocol: class {}
+protocol EmailRouterProtocol: class {
+    func goToDetail(model: DetailModel)
+}
 
 protocol EmailViewModelDelegate: class {
     func didFetchData()

@@ -12,5 +12,8 @@ class ViewedRouter {
 }
 
 extension ViewedRouter: ViewedRouterProtocol {
-    
+    func goToDetail(model: DetailModel) {
+        let view = DetailWireframe.create(model: model)
+        self.controller?.navigationController?.pushViewController(view, animated: true)
+    }
 }

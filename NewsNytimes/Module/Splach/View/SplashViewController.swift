@@ -24,7 +24,7 @@ class SplashViewController: UIViewController {
         super.viewDidLoad()
 
         self.viewModel.delegate = self
-        self.view.backgroundColor = .systemBlue
+        self.view.backgroundColor = .systemGray5
         self.setupLoadIndikator()
     }
     

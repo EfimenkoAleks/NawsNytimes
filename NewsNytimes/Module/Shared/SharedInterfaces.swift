@@ -10,6 +10,7 @@ import Foundation
 protocol SharedViewModelOutputProtocol: class {
     var countEmails: Int { get }
     func itemForTable(index: Int) -> Articles
+    func goToDetail(index: Int)
 }
 
 protocol SharedViewModelInputProtocol: class {
@@ -18,7 +19,9 @@ protocol SharedViewModelInputProtocol: class {
 
 protocol SharedViewModelProtocol: SharedViewModelOutputProtocol, SharedViewModelInputProtocol {}
 
-protocol SharedRouterProtocol: class {}
+protocol SharedRouterProtocol: class {
+    func goToDetail(model: DetailModel)
+}
 
 protocol SharedViewModelDelegate: class {
     func didFetchData()

@@ -9,7 +9,7 @@ import UIKit
 
 class ViewedViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView! {
+    @IBOutlet private weak var tableView: UITableView! {
         didSet {
             tableView.registerCell(type: ViewedTableViewCell.self)
             tableView.backgroundColor = .clear
@@ -19,14 +19,12 @@ class ViewedViewController: UIViewController {
         }
     }
     
-    
-    
     var viewModel: ViewedViewModelProtocol!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = .systemBlue
+        self.view.backgroundColor = .systemGray5
     }
 
 }
@@ -52,11 +50,13 @@ extension ViewedViewController: UITableViewDataSource {
         
         return cell
     }
-    
-    
 }
 
-extension ViewedViewController: UITableViewDelegate {}
+extension ViewedViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.viewModel.goToDetail(index: indexPath.row)
+    }
+}
 
 extension ViewedViewController: CellButtonDelegate {
     

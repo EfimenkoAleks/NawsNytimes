@@ -10,7 +10,7 @@ import Foundation
 class ViewedViewModel {
     private var router: ViewedRouterProtocol
     weak var delegate: ViewedViewModelDelegate?
-    private var emails: [Articles]
+    private var vieweds: [Articles]
     private var service: ViewedMicroService
     private var dataSource: CoreDataManagerProtocol
     
@@ -20,11 +20,11 @@ class ViewedViewModel {
         dataService: CoreDataManagerProtocol = DIContainer.default.coreDataArticles
          ) {
         self.router = router
-        self.emails = []
+        self.vieweds = []
         self.service = service
         self.dataSource = dataService
         if self.service.viewedList.count > 0 {
-            self.emails = self.service.viewedList
+            self.vieweds = self.service.viewedList
             self.delegate?.didFetchData()
         }
     }
@@ -33,15 +33,15 @@ class ViewedViewModel {
 extension ViewedViewModel: ViewedViewModelProtocol {
     
     var countEmails: Int {
-        return self.emails.count
+        return self.vieweds.count
     }
     
     func itemForTable(index: Int) -> Articles {
-        return self.emails[index]
+        return self.vieweds[index]
     }
     
     func addToFavourites(id: Double) {
-        let model = self.emails.first(where: {$0.id == id})
+        let model = self.vieweds.first(where: {$0.id == id})
         guard let title = model?.title, let url = model?.media?.last?.mediaMetadata?.last?.url, let abstract = model?.abstract else { return }
         
         self.dataSource.save(title: title, image: url, abstract: abstract) { (result) in
@@ -52,6 +52,17 @@ extension ViewedViewModel: ViewedViewModelProtocol {
                 print(error.localizedDescription)
             }
         }
+    }
+    
+    func goToDetail(index: Int) {
+      
+        let title = self.vieweds[index].title ?? "No title"
+        let text = self.vieweds[index].abstract ?? "No text"
+        let image = self.vieweds[index].media?.last?.mediaMetadata?.last?.url ?? "No image"
+        
+        let detailModel = DetailModel(title: title, abstract: text, image: image)
+        
+        self.router.goToDetail(model: detailModel)
     }
 }
 
