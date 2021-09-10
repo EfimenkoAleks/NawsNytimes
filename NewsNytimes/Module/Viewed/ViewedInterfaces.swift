@@ -10,6 +10,7 @@ import Foundation
 protocol ViewedViewModelOutputProtocol: class {
     var countEmails: Int { get }
     func itemForTable(index: Int) -> Articles
+    func addToFavourites(id: Double)
 }
 
 protocol ViewedViewModelInputProtocol: class {}

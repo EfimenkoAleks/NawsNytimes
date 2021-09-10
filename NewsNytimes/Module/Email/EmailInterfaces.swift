@@ -12,7 +12,9 @@ protocol EmailViewModelOutputProtocol: class {
     func itemForTable(index: Int) -> Articles
 }
 
-protocol EmailViewModelInputProtocol: class {}
+protocol EmailViewModelInputProtocol: class {
+    func addToFavourites(id: Double)
+}
 
 protocol EmailViewModelProtocol: EmailViewModelOutputProtocol, EmailViewModelInputProtocol {}
 
@@ -20,4 +22,8 @@ protocol EmailRouterProtocol: class {}
 
 protocol EmailViewModelDelegate: class {
     func didFetchData()
+}
+
+protocol CellButtonDelegate: class {
+    func addFavourites(index: Double)
 }

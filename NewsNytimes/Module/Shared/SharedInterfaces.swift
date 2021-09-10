@@ -12,7 +12,9 @@ protocol SharedViewModelOutputProtocol: class {
     func itemForTable(index: Int) -> Articles
 }
 
-protocol SharedViewModelInputProtocol: class {}
+protocol SharedViewModelInputProtocol: class {
+    func addToFavourites(id: Double)
+}
 
 protocol SharedViewModelProtocol: SharedViewModelOutputProtocol, SharedViewModelInputProtocol {}
 

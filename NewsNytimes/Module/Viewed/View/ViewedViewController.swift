@@ -48,6 +48,7 @@ extension ViewedViewController: UITableViewDataSource {
         
         let model = self.viewModel.itemForTable(index: indexPath.row)
         cell.configure(model: model)
+        cell.delegate = self
         
         return cell
     }
@@ -55,6 +56,11 @@ extension ViewedViewController: UITableViewDataSource {
     
 }
 
-extension ViewedViewController: UITableViewDelegate {
+extension ViewedViewController: UITableViewDelegate {}
+
+extension ViewedViewController: CellButtonDelegate {
     
+    func addFavourites(index: Double) {
+        self.viewModel.addToFavourites(id: index)
+    }
 }

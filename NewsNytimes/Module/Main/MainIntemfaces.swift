@@ -14,7 +14,9 @@ protocol MainViewModelOutputProtocol: class {
     var delegate: MainViewModelDelegate? { get set }
 }
 
-protocol MainViewModelInputProtocol: class {}
+protocol MainViewModelInputProtocol: class {
+    func routeToFavourite()
+}
 
 protocol MainViewModelProtocol: MainViewModelOutputProtocol, MainViewModelInputProtocol {}
 
@@ -22,6 +24,7 @@ protocol MainRouterProtocol: class {
     var emailModule: EmailWireFrame.EmailModule { get }
     var sharedModule: SharedWireFrame.SharedModule { get }
     var viewedModule: ViewedWireframe.ViewedModule { get }
+    func goToFavourite()
 }
 
 protocol MainViewModelDelegate: class {
