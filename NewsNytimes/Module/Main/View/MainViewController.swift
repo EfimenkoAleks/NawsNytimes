@@ -71,7 +71,7 @@ class MainViewController: UITabBarController {
     }
     
     @objc func goFavorites() {
-        print("goFavorites")
+        self.viewModel.routeToFavourite()
     }
 }
 

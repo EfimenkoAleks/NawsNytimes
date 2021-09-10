@@ -46,4 +46,8 @@ extension MainViewModel: MainViewModelProtocol {
         return self.imagesIn
     }
     
+    func routeToFavourite() {
+        self.router.goToFavourite()
+    }
+    
 }

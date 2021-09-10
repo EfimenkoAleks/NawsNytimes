@@ -40,13 +40,19 @@ extension EmailViewController: UITableViewDataSource {
         
         let model = self.viewModel.itemForTable(index: indexPath.row)
         cell.configure(model: model)
-        
+        cell.delegate = self
+       
         return cell
     }
     
     
 }
 
-extension EmailViewController: UITableViewDelegate {
+extension EmailViewController: UITableViewDelegate {}
+
+extension EmailViewController: CellButtonDelegate {
     
+    func addFavourites(index: Double) {
+        self.viewModel.addToFavourites(id: index)
+    }
 }

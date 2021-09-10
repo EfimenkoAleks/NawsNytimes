@@ -23,5 +23,8 @@ class MainRouter {
 }
 
 extension MainRouter: MainRouterProtocol {
-    
+    func goToFavourite() {
+        let view = FavouriteWarframe.create()
+        self.controller?.navigationController?.pushViewController(view, animated: true)
+    }
 }

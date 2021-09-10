@@ -21,27 +21,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDX-Gk-ZNa">
-                                <rect key="frame" x="20" y="0.0" width="220" height="68"/>
+                                <rect key="frame" x="20" y="0.0" width="230" height="68"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CLm-jA-gjt">
-                                <rect key="frame" x="260" y="14" width="40" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zf-Bn-dwE">
+                                <rect key="frame" x="270" y="14" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="CpS-0X-Sdd"/>
-                                    <constraint firstAttribute="height" constant="40" id="vBh-VJ-kBy"/>
+                                    <constraint firstAttribute="width" constant="40" id="JGU-4q-jAo"/>
+                                    <constraint firstAttribute="height" constant="40" id="dtN-y6-MFp"/>
                                 </constraints>
-                            </imageView>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="actionButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CC5-MM-4X6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="7Zf-Bn-dwE" firstAttribute="centerY" secondItem="x7L-i0-lx2" secondAttribute="centerY" id="8ae-QU-DQJ"/>
                             <constraint firstAttribute="bottom" secondItem="HDX-Gk-ZNa" secondAttribute="bottom" id="ABu-jK-uZz"/>
-                            <constraint firstAttribute="trailing" secondItem="CLm-jA-gjt" secondAttribute="trailing" constant="20" id="EzL-gL-1bi"/>
-                            <constraint firstItem="CLm-jA-gjt" firstAttribute="leading" secondItem="HDX-Gk-ZNa" secondAttribute="trailing" constant="20" id="lsX-7I-x2h"/>
+                            <constraint firstAttribute="trailing" secondItem="7Zf-Bn-dwE" secondAttribute="trailing" constant="10" id="YTo-fL-9tx"/>
                             <constraint firstItem="HDX-Gk-ZNa" firstAttribute="top" secondItem="x7L-i0-lx2" secondAttribute="top" id="u8j-wD-Q2O"/>
-                            <constraint firstItem="CLm-jA-gjt" firstAttribute="centerY" secondItem="x7L-i0-lx2" secondAttribute="centerY" id="uee-2E-r3B"/>
                             <constraint firstItem="HDX-Gk-ZNa" firstAttribute="leading" secondItem="x7L-i0-lx2" secondAttribute="leading" constant="20" id="y5c-aM-INQ"/>
+                            <constraint firstItem="7Zf-Bn-dwE" firstAttribute="leading" secondItem="HDX-Gk-ZNa" secondAttribute="trailing" constant="20" id="zb1-jw-tJQ"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -56,7 +60,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="emailTextLabel" destination="HDX-Gk-ZNa" id="eug-0H-MjE"/>
-                <outlet property="statImageView" destination="CLm-jA-gjt" id="H1N-Yi-p47"/>
+                <outlet property="tapButton" destination="7Zf-Bn-dwE" id="tCU-Qa-rPC"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
         </tableViewCell>
