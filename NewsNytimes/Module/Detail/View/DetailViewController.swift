@@ -17,6 +17,7 @@ class DetailViewController: UIViewController {
             tableView.registerCell(type: AbstractTableViewCell.self)
             tableView.registerCell(type: ImageTableViewCell.self)
             tableView.backgroundColor = .clear
+            tableView.isScrollEnabled = false
             tableView.separatorStyle = .none
             tableView.estimatedRowHeight = 40
             tableView.dataSource = self
