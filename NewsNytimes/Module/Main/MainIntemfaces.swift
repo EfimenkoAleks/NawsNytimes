@@ -8,7 +8,7 @@
 import UIKit
 
 protocol MainViewModelOutputProtocol: class {
-    var delegate: MainViewModelDelegate? { get set }
+    func createTabBarController() -> [UIViewController]
 }
 
 protocol MainViewModelInputProtocol: class {
@@ -18,9 +18,9 @@ protocol MainViewModelInputProtocol: class {
 protocol MainViewModelProtocol: MainViewModelOutputProtocol, MainViewModelInputProtocol {}
 
 protocol MainRouterProtocol: class {
+    
+    var emailModule: EmailWireFrame.EmailModule { get }
+    var sharedModule: SharedWireFrame.SharedModule { get }
+    var viewedModule: ViewedWireframe.ViewedModule { get }
     func goToFavourite()
-}
-
-protocol MainViewModelDelegate: class {
-    func didFetchData()
 }

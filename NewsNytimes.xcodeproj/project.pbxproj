@@ -50,8 +50,6 @@
 		CE7384C426E8C8A500C81FDD /* ViewedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7384C226E8C8A500C81FDD /* ViewedTableViewCell.swift */; };
 		CE7384C526E8C8A500C81FDD /* ViewedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7384C326E8C8A500C81FDD /* ViewedTableViewCell.xib */; };
 		CE7384C826E8C8C300C81FDD /* ViewedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7384C726E8C8C300C81FDD /* ViewedViewModel.swift */; };
-		CE7384D026E91D2C00C81FDD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7384CE26E91D2C00C81FDD /* MainViewController.swift */; };
-		CE7384D126E91D2C00C81FDD /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7384CF26E91D2C00C81FDD /* MainViewController.xib */; };
 		CE8688B526EA1E2200829140 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8688B426EA1E2200829140 /* APIModel.swift */; };
 		CE8688BD26EA2DE000829140 /* FavouriteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8688BC26EA2DE000829140 /* FavouriteRouter.swift */; };
 		CE8688C026EA2DF600829140 /* FavouriteWarframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8688BF26EA2DF600829140 /* FavouriteWarframe.swift */; };
@@ -76,6 +74,8 @@
 		CE86891226EB4AA500829140 /* AbstractTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE86891026EB4AA500829140 /* AbstractTableViewCell.xib */; };
 		CE86891626EB4C3600829140 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86891426EB4C3600829140 /* ImageTableViewCell.swift */; };
 		CE86891726EB4C3600829140 /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE86891526EB4C3600829140 /* ImageTableViewCell.xib */; };
+		CEA43ABC26ECD0B60030FE27 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA43ABA26ECD0B60030FE27 /* MainViewController.swift */; };
+		CEA43ABD26ECD0B60030FE27 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA43ABB26ECD0B60030FE27 /* MainViewController.xib */; };
 		CEA59C8126E7DE8F00377780 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8026E7DE8F00377780 /* DIContainer.swift */; };
 		CEA59C8526E7E06200377780 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8426E7E06200377780 /* APIService.swift */; };
 		CEA59C8826E7E1D100377780 /* APIServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C8726E7E1D100377780 /* APIServiceImplementation.swift */; };
@@ -131,8 +131,6 @@
 		CE7384C226E8C8A500C81FDD /* ViewedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedTableViewCell.swift; sourceTree = "<group>"; };
 		CE7384C326E8C8A500C81FDD /* ViewedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewedTableViewCell.xib; sourceTree = "<group>"; };
 		CE7384C726E8C8C300C81FDD /* ViewedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedViewModel.swift; sourceTree = "<group>"; };
-		CE7384CE26E91D2C00C81FDD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		CE7384CF26E91D2C00C81FDD /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		CE8688B426EA1E2200829140 /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		CE8688BC26EA2DE000829140 /* FavouriteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteRouter.swift; sourceTree = "<group>"; };
 		CE8688BF26EA2DF600829140 /* FavouriteWarframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteWarframe.swift; sourceTree = "<group>"; };
@@ -157,6 +155,8 @@
 		CE86891026EB4AA500829140 /* AbstractTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AbstractTableViewCell.xib; sourceTree = "<group>"; };
 		CE86891426EB4C3600829140 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		CE86891526EB4C3600829140 /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
+		CEA43ABA26ECD0B60030FE27 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CEA43ABB26ECD0B60030FE27 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		CEA59C8026E7DE8F00377780 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		CEA59C8426E7E06200377780 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		CEA59C8726E7E1D100377780 /* APIServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceImplementation.swift; sourceTree = "<group>"; };
@@ -256,8 +256,8 @@
 		CE1BC97D26E6843600530874 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CE7384CE26E91D2C00C81FDD /* MainViewController.swift */,
-				CE7384CF26E91D2C00C81FDD /* MainViewController.xib */,
+				CEA43ABA26ECD0B60030FE27 /* MainViewController.swift */,
+				CEA43ABB26ECD0B60030FE27 /* MainViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -641,8 +641,8 @@
 				CE8688C826EA2E4000829140 /* FavouriteViewController.xib in Resources */,
 				CE7384AB26E8A95E00C81FDD /* SharedTableViewCell.xib in Resources */,
 				CE73847226E807EC00C81FDD /* SplashViewController.xib in Resources */,
-				CE7384D126E91D2C00C81FDD /* MainViewController.xib in Resources */,
 				CE1BC96D26E6440E00530874 /* Assets.xcassets in Resources */,
+				CEA43ABD26ECD0B60030FE27 /* MainViewController.xib in Resources */,
 				CE7384A326E8A55600C81FDD /* SharedViewController.xib in Resources */,
 				CE86891726EB4C3600829140 /* ImageTableViewCell.xib in Resources */,
 				CE86891226EB4AA500829140 /* AbstractTableViewCell.xib in Resources */,
@@ -723,6 +723,7 @@
 				CE8688F926EB392700829140 /* DetailViewController.swift in Sources */,
 				CE8688E726EA9CA700829140 /* FavouriteTableViewCell.swift in Sources */,
 				CE73846726E8071000C81FDD /* SplashRouter.swift in Sources */,
+				CEA43ABC26ECD0B60030FE27 /* MainViewController.swift in Sources */,
 				CE8688CF26EA863800829140 /* CoreDataBase.swift in Sources */,
 				CE8688FE26EB395900829140 /* DetailViewModel.swift in Sources */,
 				CE7384C426E8C8A500C81FDD /* ViewedTableViewCell.swift in Sources */,
@@ -748,7 +749,6 @@
 				CE73848826E89BD900C81FDD /* EmailViewController.swift in Sources */,
 				CE1BC9A326E7847D00530874 /* Services.swift in Sources */,
 				CEA59C8826E7E1D100377780 /* APIServiceImplementation.swift in Sources */,
-				CE7384D026E91D2C00C81FDD /* MainViewController.swift in Sources */,
 				CE1BC98526E6847D00530874 /* MainWireFrame.swift in Sources */,
 				CE86890226EB3DC000829140 /* DetailModel.swift in Sources */,
 				CE1BC96B26E6440B00530874 /* NewsNytimes.xcdatamodeld in Sources */,

@@ -151,22 +151,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E4AF6F68-0FFB-461D-97DF-C1F547CCE6FE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NewsNytimes/Module/Splach/ViewModel/SplashViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "init(router:service:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "C244ED5B-2AB8-4E1D-A042-EE4D084C5350"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -183,70 +167,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CC48B530-52AE-408F-99B5-FB6914FB2BF3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NewsNytimes/Module/Splach/ViewModel/SplashViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "init(router:service:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "CC48B530-52AE-408F-99B5-FB6914FB2BF3 - 732cada3a0432018"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NewsNytimes.SplashViewModel.init(router: NewsNytimes.SplashRouterProtocol, service: NewsNytimes.ConfigurationService) -&gt; NewsNytimes.SplashViewModel"
-                  moduleName = "NewsNytimes"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/user/Desktop/NewsNytimes/NewsNytimes/Module/Splach/ViewModel/SplashViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "435">
-               </Location>
-               <Location
-                  uuid = "CC48B530-52AE-408F-99B5-FB6914FB2BF3 - 495f141e500febbd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (NewsNytimes.ServiceState) -&gt; () in NewsNytimes.SplashViewModel.init(router: NewsNytimes.SplashRouterProtocol, service: NewsNytimes.ConfigurationService) -&gt; NewsNytimes.SplashViewModel"
-                  moduleName = "NewsNytimes"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/user/Desktop/NewsNytimes/NewsNytimes/Module/Splach/ViewModel/SplashViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "78">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DF1315EF-159E-42C6-843E-97520B04CEEB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NewsNytimes/Module/Splach/ViewModel/SplashViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "goToMain()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "5D0879C9-C540-49C4-8970-F7A60405CA74"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -254,8 +174,8 @@
             filePath = "NewsNytimes/Module/Main/MainRouter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "init(context:)"
             landmarkType = "7">
             <Locations>
@@ -305,22 +225,6 @@
             startingLineNumber = "26"
             endingLineNumber = "26"
             landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8BF47864-C750-42A0-80ED-9B64F21862EB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NewsNytimes/Module/Main/View/MainViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "createFavorites()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -27,7 +26,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="top" secondItem="hms-62-3gk" secondAttribute="top" id="37z-fF-tX0"/>
                             <constraint firstItem="hms-62-3gk" firstAttribute="leading" secondItem="qV9-mz-obl" secondAttribute="leading" constant="10" id="I4k-rV-glu"/>
@@ -36,6 +35,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="qV9-mz-obl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Z8b-kA-61T"/>
                     <constraint firstAttribute="trailing" secondItem="qV9-mz-obl" secondAttribute="trailing" id="lHS-qt-s06"/>
@@ -50,9 +50,4 @@
             <point key="canvasLocation" x="137.68115942028987" y="122.20982142857142"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
