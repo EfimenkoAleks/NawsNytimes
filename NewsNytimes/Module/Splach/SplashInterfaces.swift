@@ -23,4 +23,5 @@ protocol SplashRouterProtocol: class {
 
 protocol SplashViewModelDelegate: class {
     func appStart()
+    func appError()
 }

@@ -38,13 +38,16 @@ class ConfigurationServiceImplementation {
                 group.enter()
                 $0.reload { (state) in
                     if state == .loaded {
+                        self.state = .loaded
+                        group.leave()
+                    } else {
+                        self.state = .error
                         group.leave()
                     }
                 }
             })
         
         group.notify(queue: .main) {
-            self.state = .loaded
             completionHandler()
         }
     }
