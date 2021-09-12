@@ -21,6 +21,8 @@ class SplashViewModel {
         service.reload { (state) in
             if state == .loaded {
                 self.delegate?.appStart()
+            } else {
+                self.delegate?.appError()
             }
         }
     }

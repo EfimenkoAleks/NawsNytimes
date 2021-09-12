@@ -8,6 +8,10 @@
 import Foundation
 import Alamofire
 
+enum CuntomError: Error {
+    case noData
+}
+
 class APIServiceImplementation {
     
     let baseUrl = "https://api.nytimes.com/svc/mostpopular/v2/"
@@ -34,7 +38,7 @@ class APIServiceImplementation {
 extension APIServiceImplementation: APIService {
     
     
-    func getEmialedList(completionHandler: @escaping (APIModel) -> Void) {
+    func getEmialedList(completionHandler: @escaping (Result<APIModel, CuntomError>) -> Void) {
         
         let url = baseUrl + Endpoint.email.path + clientId
         AF.request(url)
@@ -45,18 +49,18 @@ extension APIServiceImplementation: APIService {
             case 200:
                 guard let email = response.value else { return }
                 print(email.results?.first?.title! ?? "")
-                completionHandler(email)
+                completionHandler(.success(email))
             
             case .none:
-                break
+                completionHandler(.failure(.noData))
             
             case .some(_):
-                break
+                completionHandler(.failure(.noData))
             }
           }
     }
     
-    func getSharedList(completionHandler: @escaping (APIModel) -> Void) {
+    func getSharedList(completionHandler: @escaping (Result<APIModel, CuntomError>) -> Void) {
         
         let url = baseUrl + Endpoint.shared.path + clientId
         AF.request(url)
@@ -67,18 +71,18 @@ extension APIServiceImplementation: APIService {
             case 200:
                 guard let shared = response.value else { return }
                 print(shared.results?.first?.title! ?? "")
-                completionHandler(shared)
+                completionHandler(.success(shared))
             
             case .none:
-                break
+                completionHandler(.failure(.noData))
             
             case .some(_):
-                break
+                completionHandler(.failure(.noData))
             }
           }
     }
     
-    func getViewedList(completionHandler: @escaping (APIModel) -> Void) {
+    func getViewedList(completionHandler: @escaping (Result<APIModel, CuntomError>) -> Void) {
         
         let url = baseUrl + Endpoint.viewed.path + clientId
         AF.request(url)
@@ -89,13 +93,13 @@ extension APIServiceImplementation: APIService {
             case 200:
                 guard let viewed = response.value else { return }
                 print(viewed.results?.first?.title! ?? "")
-                completionHandler(viewed)
+                completionHandler(.success(viewed))
             
             case .none:
-                break
+                completionHandler(.failure(.noData))
             
             case .some(_):
-                break
+                completionHandler(.failure(.noData))
             }
           }
     }

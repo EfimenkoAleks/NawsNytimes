@@ -32,16 +32,27 @@ class EmailMicroServiceImplementation {
                     completionHandler(.error)
                     return
                 }
-                guard let rezultList = result.results else {
-                    self.state = .error
+                switch result {
+                
+                case .success(let data):
+                    guard let rezultList = data.results else {
+                        self.state = .error
+                        completionHandler(self.state)
+                        return
+                    }
+                    
+                    self.emailList = rezultList
+                    
+                    self.state = .loaded
                     completionHandler(self.state)
-                    return
+                    
+                case .failure(let error):
+                    if error == .noData {
+                        self.state = .error
+                        completionHandler(self.state)
+                    }
                 }
                 
-                self.emailList = rezultList
-                
-                self.state = .loaded
-                completionHandler(self.state)
             }
     }
 }
