@@ -40,10 +40,19 @@ extension APIServiceImplementation: APIService {
         AF.request(url)
           .validate()
           .responseDecodable(of: APIModel.self) { (response) in
-            guard let email = response.value else { return }
-            print(email.results?.first?.title! ?? "")
-            completionHandler(email)
+           
+            switch response.response?.statusCode {
+            case 200:
+                guard let email = response.value else { return }
+                print(email.results?.first?.title! ?? "")
+                completionHandler(email)
             
+            case .none:
+                break
+            
+            case .some(_):
+                break
+            }
           }
     }
     
@@ -53,9 +62,19 @@ extension APIServiceImplementation: APIService {
         AF.request(url)
           .validate()
           .responseDecodable(of: APIModel.self) { (response) in
-            guard let shared = response.value else { return }
-            print(shared.results?.first?.title! ?? "")
-            completionHandler(shared)
+            
+            switch response.response?.statusCode {
+            case 200:
+                guard let shared = response.value else { return }
+                print(shared.results?.first?.title! ?? "")
+                completionHandler(shared)
+            
+            case .none:
+                break
+            
+            case .some(_):
+                break
+            }
           }
     }
     
@@ -65,9 +84,19 @@ extension APIServiceImplementation: APIService {
         AF.request(url)
           .validate()
           .responseDecodable(of: APIModel.self) { (response) in
-            guard let viewed = response.value else { return }
-            print(viewed.results?.first?.title! ?? "")
-            completionHandler(viewed)
+            
+            switch response.response?.statusCode {
+            case 200:
+                guard let viewed = response.value else { return }
+                print(viewed.results?.first?.title! ?? "")
+                completionHandler(viewed)
+            
+            case .none:
+                break
+            
+            case .some(_):
+                break
+            }
           }
     }
 }
